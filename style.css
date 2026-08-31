@@ -1,0 +1,2300 @@
+html,
+body {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    
+}
+
+/* Background logo watermark visible through transparent sections */
+#focus-section,
+#focus-section > * {
+    background: transparent !important;
+}
+
+/* ===== Focus section: 4 equal cards ===== */
+.focus-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    width: 100%;
+    max-width: 1130px;
+    padding: 0 25px;
+    align-items: stretch;
+}
+
+.focus-card {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.focus-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(190, 52, 85, 0.14);
+}
+
+.focus-card-img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.focus-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.focus-card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 24px 22px;
+}
+
+.focus-card-title {
+    margin: 0 0 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #3D3B3B;
+}
+
+.focus-card-desc {
+    margin: 0 0 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #3D3B3B;
+    flex: 1;
+}
+
+.focus-card-btn {
+    align-self: flex-start;
+    display: inline-block;
+    background: #BE3455;
+    color: #FFFFFF;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 12px 28px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.focus-card-btn:hover {
+    background: #922C44;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+    .focus-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .focus-grid {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+}
+
+/* ===== Consultancy: How we can help (4 equal cards, 2x2) ===== */
+.consult-focus-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.consult-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 28px;
+    width: 100%;
+    align-items: stretch;
+}
+
+.consult-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    padding: 36px 30px;
+    transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.consult-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(190, 52, 85, 0.14);
+}
+
+.consult-card img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 18px;
+    flex-shrink: 0;
+}
+
+.consult-card-title {
+    margin: 0 0 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #3D3B3B;
+}
+
+.consult-card-title span {
+    color: #BE3455;
+}
+
+.consult-card-desc {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.65;
+    color: #3D3B3B;
+    max-width: 360px;
+}
+
+@media (max-width: 768px) {
+    .consult-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        padding: 0 10px;
+    }
+    .consult-card {
+        padding: 28px 22px;
+    }
+}
+
+/* ===== Consultancy: Our approach (I-D-E-A method) ===== */
+.consult-method-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 60px 25px;
+    text-align: center;
+}
+
+.consult-method-title {
+    margin: 0 0 18px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #3D3B3B;
+}
+
+.consult-method-intro {
+    margin: 0 0 40px;
+    max-width: 720px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.7;
+    color: #3D3B3B;
+}
+
+.method-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 24px;
+    width: 100%;
+    align-items: stretch;
+}
+
+.method-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    padding: 36px 26px;
+    transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.method-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(190, 52, 85, 0.14);
+}
+
+.method-step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #BE3455;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    flex-shrink: 0;
+}
+
+.method-card-title {
+    margin: 0 0 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #3D3B3B;
+}
+
+.method-card-desc {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.65;
+    color: #3D3B3B;
+}
+
+@media (max-width: 1024px) {
+    .method-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .method-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+    .method-card {
+        padding: 30px 22px;
+    }
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: url("assets/imgi_2_Brian-Pennie-Logo-Magenta-Landscape_2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    opacity: 0.10;
+    pointer-events: none;
+}
+
+#nav {
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background {
+    background-color: rgb(190, 52, 85);
+}
+
+/* Navbar scroll animation */
+header {
+    transition: all 250ms ease;
+}
+.top-bar {
+    transition: opacity 220ms ease, transform 220ms ease, height 220ms ease, padding 220ms ease;
+}
+.main-nav {
+    transition: padding 220ms ease, box-shadow 220ms ease, background-color 220ms ease;
+}
+.main-nav nav a.active {
+    opacity: 1 !important;
+    color: #ffffff;
+    font-weight: 800;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+/* For Organisations dropdown – the two sub-links turn red when clicked */
+.main-nav nav .group a.active {
+    color: #BE3455;
+    text-decoration: none;
+}
+.logo-img {
+    transition: height 220ms ease, transform 220ms ease;
+}
+header.scrolled .top-bar {
+    opacity: 0;
+    transform: translateY(-6px);
+    height: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    pointer-events: none;
+}
+header.scrolled .main-nav {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    background-color: rgba(190, 52, 85, 0.5); /* 50% opacity nav color */
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    backdrop-filter: blur(6px);
+}
+header.scrolled .logo-img {
+    height: 32px !important; /* smaller logo */
+    transform: translateY(-2px);
+}
+
+/* Make sure logo sizing respects the img intrinsic ratio */
+.logo-img { width: auto; }
+
+/* ===== Hamburger Button (ElementsKit style) ===== */
+.hamburger-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 5px;
+    width: 45px;
+    height: 45px;
+    padding: 8px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 0.25rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 90;
+    transition: all 0.4s ease-in;
+}
+
+.hamburger-bar {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 999px;
+    transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.24, 1),
+                opacity 0.3s ease,
+                background-color 0.3s ease;
+}
+
+.hamburger-btn:hover .hamburger-bar {
+    background: #fff;
+}
+
+/* ===== Mobile Menu Overlay (ElementsKit style) ===== */
+.mobile-menu-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    background: rgba(51, 51, 51, 0.5);
+    z-index: 14;
+    cursor: pointer;
+    transition: all 0.6s cubic-bezier(0.6, 0.1, 0.68, 0.53) 0.4s;
+}
+
+.mobile-menu-overlay.active {
+    left: 0;
+    transition: all 0.6s cubic-bezier(0.22, 0.61, 0.24, 1) 0s;
+}
+
+/* ===== Mobile Menu Drawer (slides in from left) ===== */
+.mobile-menu-drawer {
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 100%;
+    max-width: 350px;
+    height: 100vh;
+    background: #f7f7f7;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.25);
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    transition: left 0.6s cubic-bezier(0.6, 0.1, 0.68, 0.53);
+}
+
+.mobile-menu-drawer.active {
+    left: 0;
+    transition: left 0.6s cubic-bezier(0.22, 0.61, 0.24, 1) 0s;
+}
+
+/* Identity panel: logo + close X at the top of the drawer */
+.elementskit-nav-identity-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    flex-shrink: 0;
+}
+
+.elementskit-nav-logo img.drawer-logo {
+    height: 36px;
+    width: auto;
+}
+
+.mobile-menu-close {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    color: rgba(51, 51, 51, 0.8);
+    background: transparent;
+    border-radius: 0.25rem;
+    width: 34px;
+    height: 34px;
+    font-size: 13px;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+
+.mobile-menu-close:hover {
+    background: rgba(51, 51, 51, 0.08);
+    color: #000;
+}
+
+/* Drawer links */
+.mobile-menu-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 11px 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.mobile-link.active,
+.mobile-link:hover {
+    color: #be3455;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Mobile Dropdown (expandable via max-height) */
+.mobile-dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-dropdown-toggle .material-symbols-outlined {
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.mobile-dropdown.open .mobile-dropdown-toggle .material-symbols-outlined {
+    transform: rotate(180deg);
+}
+
+.mobile-dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.mobile-dropdown.open .mobile-dropdown-menu {
+    max-height: 250px;
+}
+
+.mobile-link.sub {
+    font-size: 13px;
+    font-weight: 500;
+    padding-left: 36px;
+}
+
+/* Hide overlay & drawer on desktop */
+@media (min-width: 1025px) {
+    .mobile-menu-overlay,
+    .mobile-menu-drawer {
+        display: none;
+    }
+}
+
+/* Show hamburger only on mobile/tablet */
+@media (min-width: 1025px) {
+    .hamburger-btn {
+        display: none;
+    }
+}
+
+/* ===== Footer: Contact section ===== */
+.footer-contact {
+    position: relative;
+    background: transparent;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.footer-contact::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("assets/imgi_2_Brian-Pennie-Logo-Magenta-Landscape_2.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.06;
+    pointer-events: none;
+}
+
+@media (min-width: 1025px) {
+    .footer-contact::before {
+        background-attachment: fixed;
+    }
+}
+
+/* ===== Contact section animated background (glowing gradient blobs) ===== */
+.contact-bg-glow {
+    position: absolute;
+    z-index: 0;
+    top: -30%;
+    left: -20%;
+    width: 70%;
+    height: 160%;
+    background: radial-gradient(circle at center, rgba(190, 52, 85, 0.12), transparent 70%);
+    filter: blur(40px);
+    animation: contactGlow 18s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+.contact-bg-glow-2 {
+    top: auto;
+    bottom: -35%;
+    left: auto;
+    right: -15%;
+    width: 75%;
+    height: 160%;
+    background: radial-gradient(circle at center, rgba(0, 121, 70, 0.12), transparent 70%);
+    animation-duration: 22s;
+    animation-delay: -6s;
+}
+
+@keyframes contactGlow {
+    0%   { transform: translate(0, 0) scale(1); }
+    50%  { transform: translate(12%, -8%) scale(1.15); }
+    100% { transform: translate(-10%, 10%) scale(0.95); }
+}
+
+/* ===== Contact section floating particles ===== */
+.contact-floats {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.float-p {
+    position: absolute;
+    bottom: -8%;
+    left: var(--x);
+    color: #BE3455;
+    font-size: 22px;
+    opacity: 0;
+    animation: floatUp var(--dur, 16s) linear infinite;
+    animation-delay: var(--d, 0s);
+    text-shadow: 0 0 12px rgba(190, 52, 85, 0.35);
+}
+
+.float-p:nth-child(even) {
+    color: #007946;
+    font-size: 16px;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    12% {
+        opacity: 0.55;
+    }
+    85% {
+        opacity: 0.4;
+    }
+    100% {
+        transform: translateY(-115vh) rotate(120deg);
+        opacity: 0;
+    }
+}
+
+/* ===== Contact section form field entrance stagger (bounce-up) ===== */
+.reveal-bounce {
+    opacity: 0;
+    transform: translateY(42px) scale(0.98);
+    transition: opacity 700ms cubic-bezier(0.34, 1.56, 0.64, 1) var(--d, 0s),
+                transform 700ms cubic-bezier(0.34, 1.56, 0.64, 1) var(--d, 0s);
+    will-change: opacity, transform;
+}
+
+.reveal-bounce.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Gentle idle hover lift on submit button in contact form */
+.footer-form .submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(190, 52, 85, 0.3);
+}
+
+.footer-label {
+    margin: 0 0 18px;
+    color: #BE3455;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4.5px;
+    line-height: 15px;
+}
+
+.footer-heading {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 55px;
+    color: #3D3B3B;
+}
+
+.footer-desc {
+    margin: 16px 0 0;
+    padding-right: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.6em;
+    color: #3D3B3B;
+}
+
+.footer-contact-list {
+    list-style: none;
+    margin: 24px 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-contact-list li {
+    display: flex;
+    gap: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.6em;
+    color: #3D3B3B;
+}
+
+.footer-contact-list .material-symbols-outlined {
+    color: #BE3455;
+    font-size: 16px;
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+/* ===== Footer: Contact form ===== */
+.footer-form .field {
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+.footer-form input[type="text"],
+.footer-form input[type="email"],
+.footer-form textarea {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #A29999;
+    border-radius: 3px;
+    color: #3C3D41;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 1.6em;
+    padding: 15px 16px;
+    transition: border-color 0.3s ease;
+}
+
+.footer-form input:focus,
+.footer-form textarea:focus {
+    outline: none;
+    border-color: #BE3455;
+}
+
+.footer-form .checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #3D3B3B;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.footer-form .checkbox-label input {
+    margin-top: 2px;
+    accent-color: #BE3455;
+}
+
+.footer-form .submit-btn {
+    background: #BE3455;
+    color: #FFFFFF;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-form .submit-btn:hover {
+    background: #922C44;
+}
+
+/* ===== Home: Subscribe form (matches the contact form styling) ===== */
+.subscribe-form {
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 18px;
+}
+
+.subscribe-form .field {
+    flex: 1 1 240px;
+    min-width: 0;
+}
+
+.subscribe-form input[type="text"],
+.subscribe-form input[type="email"] {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #A29999;
+    border-radius: 3px;
+    color: #3C3D41;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 1.6em;
+    padding: 15px 16px;
+    transition: border-color 0.3s ease;
+}
+
+.subscribe-form input:focus {
+    outline: none;
+    border-color: #BE3455;
+}
+
+.subscribe-form .submit-btn {
+    background: #BE3455;
+    color: #FFFFFF;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-form .submit-btn:hover {
+    background: #922C44;
+}
+
+.subscribe-form .form-message {
+    display: none;
+    width: 100%;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #BE3455;
+}
+
+.footer-form .form-message {
+    display: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #922C44;
+    margin-top: 12px;
+}
+
+/* ===== Footer: Dark section ===== */
+.footer-dark {
+    background: #BE3455;
+}
+
+.footer-col-head {
+    margin: 0 0 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.footer-link-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-link-list li {
+    padding: 5px 0;
+}
+
+.footer-link-list a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.6em;
+    transition: color 0.3s ease;
+}
+
+.footer-link-list a .material-symbols-outlined {
+    font-size: 10px;
+    color: #FFFFFF;
+    transition: color 0.3s ease;
+}
+
+.footer-link-list li:hover a,
+.footer-link-list li:hover a .material-symbols-outlined {
+    color: #922C44;
+}
+
+.footer-link-list li.no-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #FFFFFF;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.6em;
+}
+
+.footer-link-list li.no-link .material-symbols-outlined {
+    font-size: 10px;
+    color: #FFFFFF;
+}
+
+.footer-social {
+    display: flex;
+    gap: 8px;
+}
+
+.footer-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.11);
+    color: #FFFFFF;
+    transition: color 0.3s ease;
+}
+
+.footer-social a svg {
+    fill: #FFFFFF;
+    width: 18px;
+    height: 18px;
+    transition: fill 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #BE3455;
+}
+
+.footer-social a:hover svg {
+    fill: #BE3455;
+}
+
+/* ===== Footer: Copyright bar ===== */
+.footer-copy {
+    padding: 18px 25px 8px;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #3D3B3B;
+}
+
+/* ===== Hero / Banner section (from brianpennie.com) ===== */
+/* Generic base rule so every section's banner matches the My Story style */
+.hero-banner {
+    display: flex;
+    align-items: center;
+    min-height: 120vh;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -180px;
+    padding: 240px 0 75px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.hero-banner .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.35) 48%, rgba(0, 0, 0, 0.5) 100%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hero-banner .hero-inner {
+    position: relative;
+    z-index: 1;
+}
+
+#MyStory .hero-banner {
+    display: flex;
+    align-items: center;
+    min-height: 120vh;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -180px;
+    padding: 240px 0 75px;
+    background-image: url("assets/imgi_22_ChangeIsPossible-135-scaled-e1732046730258.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#MyStory .hero-banner .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.35) 48%, rgba(0, 0, 0, 0.5) 100%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+#MyStory .hero-banner .hero-inner {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    padding: 0 100px;
+}
+
+.hero-graphic {
+    width: 68%;
+    max-width: 68%;
+    flex-grow: 0;
+}
+
+.hero-graphic img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero-tagline {
+    max-width: 63%;
+    flex-grow: 0;
+    margin-top: -30px;
+    padding: 0 0 0 62px;
+    text-align: start;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.6em;
+    letter-spacing: 0.4px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #FFFFFF;
+}
+
+.hero-tagline p {
+    margin: 0;
+}
+
+.hero-tagline.hero-story {
+    display: block;
+    max-width: 100%;
+    padding-right: 20px;
+    font-size: 18px;
+    line-height: 1.8em;
+    font-weight: 400;
+}
+
+.hero-story-title {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.2em;
+    margin-bottom: 12px;
+    color: #FFFFFF;
+    text-shadow: 0 0 14px rgba(0, 0, 0, 0.55);
+}
+
+.hero-story:not(:first-of-type) .hero-story-title {
+    margin-top: 6px;
+}
+
+@media (max-width: 767px) {
+    .hero-tagline.hero-story {
+        font-size: 16px;
+        line-height: 1.75em;
+        padding-right: 0;
+    }
+
+    .hero-story-title {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero-inner {
+        padding: 0 40px;
+    }
+}
+
+/* ===== Video section (from brianpennie.com) ===== */
+.video-section {
+    padding: 60px 24px 60px;
+    background: transparent;
+}
+
+.video-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.video-embed {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    aspect-ratio: 16 / 9;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.video-embed iframe,
+.video-embed iframe[src*="youtube"] {
+    position: absolute;
+    inset: 0;
+    width: 100% !important;
+    height: 100% !important;
+    border: 0;
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .video-section {
+        padding: 48px 24px 48px;
+    }
+}
+
+@media (max-width: 767px) {
+    .video-section {
+        padding: 40px 20px 40px;
+    }
+}
+
+/* ===== Reusable page banner (matches My Story banner style) ===== */
+.page-banner {
+    display: flex;
+    align-items: center;
+    min-height: 120vh;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -180px;
+    padding: 240px 0 75px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.page-banner .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.35) 48%, rgba(0, 0, 0, 0.5) 100%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.page-banner .hero-inner {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 767px) {
+    .page-banner {
+        margin-top: -160px;
+        min-height: 90vh;
+        padding: 210px 0 40px;
+    }
+    .page-banner .hero-graphic h1 {
+        margin-left: 0 !important;
+        font-size: 2.25rem !important;
+        line-height: 1.15 !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .page-banner .hero-graphic h1 {
+        font-size: 4rem !important;
+    }
+}
+
+/* Home banner should match My Story banner style */
+#home-section .hero-banner {
+    margin-top: -180px;
+    padding: 240px 0 75px;
+    min-height: 120vh;
+}
+
+#home-section .hero-banner .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.35) 48%, rgba(0, 0, 0, 0.5) 100%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+#home-section .hero-banner .hero-inner {
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== Banner headings (match brianpennie.com exactly) =====
+   All section banners use the same heading style as the reference site:
+   left-aligned, Nunito Sans ExtraBold uppercase, white with a magenta
+   (primary) accent on the emphasised word. Responsive sizes match the
+   ElementsKit heading widget used across the reference site. */
+.hero-banner .hero-graphic h1,
+.page-banner .hero-graphic h1,
+#Keynotes .keynote-banner .hero-graphic h1 {
+    margin: 0;
+    margin-left: 0;
+    color: #FFFFFF;
+    font-family: "Nunito Sans", "Poppins", sans-serif;
+    font-size: 76px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 72px;
+    letter-spacing: 0;
+    text-align: left;
+    text-shadow: 0 0 14px rgba(0, 0, 0, 0.5);
+}
+
+/* Magenta accent on the emphasised word (overrides text-red-600) */
+.hero-banner .hero-graphic h1 span,
+.page-banner .hero-graphic h1 span,
+#Keynotes .keynote-banner .hero-graphic h1 span {
+    color: #BE3455;
+    font-family: "Nunito Sans", "Poppins", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* Banner desktop sizing matches reference: min-height 110vh, content
+   pushed to the bottom-left via the graphic (which carries a bottom
+   margin so the text sits low in the banner). */
+.hero-banner,
+.page-banner {
+    min-height: 110vh;
+}
+
+.hero-banner .hero-inner,
+.page-banner .hero-inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+@media (max-width: 1024px) {
+    /* Tablet: banner collapses to 450px high, heading at 40px */
+    .hero-banner,
+    .page-banner {
+        margin-top: 0 !important;
+        padding: 0 !important;
+        min-height: 450px !important;
+    }
+    .hero-banner .hero-inner,
+    .page-banner .hero-inner {
+        padding: 0 60px;
+    }
+    .hero-banner .hero-graphic h1,
+    .page-banner .hero-graphic h1,
+    #Keynotes .keynote-banner .hero-graphic h1 {
+        font-size: 40px !important;
+        line-height: 38px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    /* Mobile: banner 500px high, heading at 2rem */
+    .hero-banner,
+    .page-banner {
+        margin-top: 0 !important;
+        padding: 0 !important;
+        min-height: 500px !important;
+    }
+    .hero-banner .hero-inner,
+    .page-banner .hero-inner {
+        padding: 0 20px;
+    }
+    .hero-banner .hero-graphic h1,
+    .page-banner .hero-graphic h1 {
+        font-size: 2rem !important;
+        line-height: 0.96em !important;
+    }
+    /* Ensure the emphasised accent keeps its magenta color on mobile */
+    .hero-banner .hero-graphic h1 span,
+    .page-banner .hero-graphic h1 span {
+        color: #BE3455 !important;
+        font-weight: 800 !important;
+        text-transform: uppercase !important;
+    }
+}
+
+/* ===== My Story section responsive layout ===== */
+#MyStory #bookGrid img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    align-self: center;
+}
+
+/* Give story grids a touch of breathing room + vertical rhythm */
+#MyStory #bookGrid {
+    align-items: center;
+    gap: 48px;
+}
+
+/* Center text column within its own area for a balanced 2-column layout */
+#MyStory #bookGrid > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Consistent vertical spacing between story blocks */
+#MyStory .footer-contact {
+    padding: 40px 0;
+}
+
+@media (max-width: 767px) {
+    #MyStory .hero-banner {
+        margin-top: 0 !important;
+        min-height: 500px !important;
+        padding: 0 !important;
+    }
+
+    /* Stack title + text cleanly on small screens */
+    #MyStory .hero-graphic h1 {
+        margin-left: 0 !important;
+        font-size: 2rem !important;
+        line-height: 0.96em !important;
+    }
+
+    #MyStory .hero-graphic h1 span {
+        color: #BE3455 !important;
+        font-weight: 800 !important;
+        text-transform: uppercase !important;
+    }
+
+    #MyStory #bookGrid {
+        gap: 24px !important;
+    }
+
+    #MyStory #bookGrid > img {
+        width: 100%;
+        max-height: 320px;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #MyStory .hero-graphic h1 {
+        font-size: 40px !important;
+        line-height: 38px !important;
+    }
+    #MyStory .hero-graphic h1 span {
+        color: #BE3455 !important;
+        font-weight: 800 !important;
+        text-transform: uppercase !important;
+    }
+}
+
+/* ===== Scroll reveal (matches script.js fade-in classes) ===== */
+.fade-in,
+.fade-in-left,
+.fade-in-right {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 800ms ease, transform 800ms ease;
+}
+
+.fade-in.visible,
+.fade-in-left.visible,
+.fade-in-right.visible {
+    opacity: 1;
+    transform: none;
+}
+
+@media (max-width: 767px) {
+    .hero-banner {
+        margin-top: -160px;
+        padding: 210px 0 40px;
+        min-height: 100vh;
+    }
+
+    .hero-inner {
+        padding: 0 20px;
+    }
+
+    
+
+    .hero-tagline {
+        max-width: 100%;
+        padding: 0;
+        margin-top: -24px;
+        font-size: 17px;
+    }
+}
+
+
+.imageH{
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    width: 100px;
+}
+
+.imageH:hover{
+    transform: scale(.8);
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
+}
+
+/* ===== Keynotes section ===== */
+#Keynotes .keynote-banner {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -180px;
+    padding: 240px 0 75px;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+#Keynotes .keynote-banner .hero-inner {
+    position: relative;
+    z-index: 1;
+}
+
+#Keynotes .keynote-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.35) 48%, rgba(0, 0, 0, 0.5) 100%);
+    z-index: 0;
+}
+
+#Keynotes .keynote-banner .hero-graphic {
+    position: relative;
+    z-index: 1;
+}
+
+/* Benefits cards */
+.keynote-card {
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 0.5rem;
+    padding: 32px 28px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.keynote-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(190, 52, 85, 0.14);
+}
+
+.keynote-icon {
+    width: 88px;
+    height: 88px;
+    object-fit: contain;
+    margin-bottom: 18px;
+}
+
+.keynote-card-title {
+    margin: 0 0 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #3D3B3B;
+}
+
+/* Overview / talks */
+.keynote-talk {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    gap: 48px;
+    align-items: start;
+}
+
+.keynote-talk-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.keynote-talk-right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Magenta full-width band (Talk 2) */
+.keynote-band .keynote-talk-title,
+.keynote-band .keynote-talk-sub,
+.keynote-band .keynote-talk-tagline,
+.keynote-band .footer-desc,
+.keynote-band .keynote-list h5,
+.keynote-band .keynote-list li {
+    color: #ffffff;
+}
+
+.keynote-band .keynote-list li::before {
+    color: #ffffff;
+}
+
+.keynote-talk-title {
+    margin: 0 0 4px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #3D3B3B;
+}
+
+.keynote-talk-sub {
+    margin: 0 0 14px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #3D3B3B;
+}
+
+.keynote-talk-tagline {
+    margin: 0 0 14px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 400;
+    color: #3D3B3B;
+}
+
+.keynote-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.keynote-list h5 {
+    margin: 0 0 8px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #3D3B3B;
+}
+
+.keynote-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.keynote-list li {
+    position: relative;
+    padding-left: 22px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #3D3B3B;
+}
+
+.keynote-list li::before {
+    content: "›";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #BE3455;
+    font-size: 15px;
+}
+
+/* Benefits cards grid */
+.keynote-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    width: 100%;
+    align-items: stretch;
+}
+
+/* Overview / talks container */
+.keynote-talks {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+@media (max-width: 900px) {
+    .keynote-talk {
+        grid-template-columns: 1fr;
+        gap: 26px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .keynote-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .keynote-grid {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+}
+
+/* Testimonials */
+.keynote-testimonial {
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 0.5rem;
+    padding: 30px 26px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.keynote-testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 36px rgba(190, 52, 85, 0.12);
+}
+
+.keynote-testimonial .footer-desc {
+    flex: 1;
+    font-size: 15px;
+}
+
+.testimonial-logo {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    margin-bottom: 18px;
+}
+
+.testimonial-name {
+    margin: 18px 0 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #3D3B3B;
+}
+
+.testimonial-role {
+    margin: 2px 0 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #BE3455;
+}
+
+@media (max-width: 767px) {
+    .keynote-talk-title {
+        font-size: 18px;
+    }
+    .keynote-talk-sub {
+        font-size: 22px;
+    }
+    #Keynotes .keynote-banner {
+        margin-top: 0;
+        padding: 0;
+        min-height: 500px;
+    }
+    #Keynotes .hero-graphic h1 {
+        margin-left: 0 !important;
+        font-size: 2rem !important;
+        line-height: 0.96em !important;
+    }
+    #Keynotes .hero-graphic h1 span {
+        color: #BE3455 !important;
+        font-weight: 800 !important;
+        text-transform: uppercase !important;
+    }
+}
+
+/* ===== Home section reveal animations (scroll-triggered) ===== */
+.reveal {
+    opacity: 0;
+    transition: opacity 800ms cubic-bezier(0.22, 0.61, 0.24, 1) var(--d, 0s),
+                transform 800ms cubic-bezier(0.22, 0.61, 0.24, 1) var(--d, 0s),
+                filter 800ms ease var(--d, 0s);
+    will-change: opacity, transform, filter;
+}
+
+.reveal-up {
+    transform: translateY(48px);
+}
+
+.reveal-down {
+    transform: translateY(-48px);
+}
+
+.reveal-left {
+    transform: translateX(-72px);
+}
+
+.reveal-right {
+    transform: translateX(72px);
+}
+
+.reveal-zoom {
+    transform: scale(0.86);
+    /* No blur here so videos/images never render blurry even if the
+       reveal is triggered on a section that was hidden at load. */
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: none;
+    filter: none;
+}
+
+/* Client logos keep their own transition + stagger, with a snappy hover */
+.imageH.reveal.visible {
+    transition: opacity 600ms cubic-bezier(0.22, 0.61, 0.24, 1),
+                transform 600ms cubic-bezier(0.22, 0.61, 0.24, 1),
+                filter 600ms ease;
+    transition-delay: var(--d, 0s);
+}
+
+.imageH.reveal.visible:hover {
+    transition-delay: 0s;
+}
+
+/* ===== Mobile: consistent text + heading sizes site-wide ===== */
+@media (max-width: 767px) {
+    /* All headings share one consistent size */
+    h1, h2, h3, h4,
+    #home-section .hero-graphic h1,
+    #MyStory .hero-graphic h1,
+    #Podcast .hero-graphic h1,
+    #Keynotes .hero-graphic h1,
+    #Consultancy .hero-graphic h1,
+    #Beyondresis .hero-graphic h1,
+    #programme .hero-graphic h1,
+    #courses .hero-graphic h1,
+    .hero-story-title,
+    .focus-card-title,
+    .keynote-card-title,
+    .consult-card-title,
+    .method-card-title,
+    .consult-method-title {
+        font-size: 28px !important;
+        line-height: 1.2 !important;
+    }
+
+    /* All body / paragraph text shares one consistent size */
+    p,
+    .footer-desc,
+    .hero-tagline,
+    .hero-story,
+    .focus-card-desc,
+    .consult-card-desc,
+    .consult-method-intro,
+    .method-card-desc,
+    .keynote-talk-tagline,
+    .keynote-list li {
+        font-size: 16px !important;
+    }
+
+    /* Banner headings keep the reference site's mobile size (2rem),
+       overriding the generic 28px rule above. Matches the section-ID
+       specificity so the later declaration wins. */
+    #home-section .hero-graphic h1,
+    #MyStory .hero-graphic h1,
+    #Podcast .hero-graphic h1,
+    #Keynotes .hero-graphic h1,
+    #Consultancy .hero-graphic h1,
+    #Beyondresis .hero-graphic h1,
+    #programme .hero-graphic h1,
+    #courses .hero-graphic h1 {
+        font-size: 2rem !important;
+        line-height: 0.9em !important;
+    }
+    /* Ensure the emphasised word keeps its magenta accent on mobile */
+    #home-section .hero-graphic h1 span,
+    #MyStory .hero-graphic h1 span,
+    #Podcast .hero-graphic h1 span,
+    #Keynotes .hero-graphic h1 span,
+    #Consultancy .hero-graphic h1 span,
+    #Beyondresis .hero-graphic h1 span,
+    #programme .hero-graphic h1 span,
+    #courses .hero-graphic h1 span {
+        color: #BE3455 !important;
+        font-weight: 800 !important;
+        text-transform: uppercase !important;
+    }
+}
+
+/* ===== Testimonials section ===== */
+.testimonials-section {
+    background: transparent;
+}
+
+.testimonials-section .footer-heading {
+    text-align: center;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    width: 100%;
+    align-items: stretch;
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    padding: 30px 26px;
+    transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(190, 52, 85, 0.14);
+}
+
+.testimonial-logo {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    margin-bottom: 18px;
+}
+
+.testimonial-logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 44px;
+    color: #BE3455;
+    background: #f9f9f9;
+    border-radius: 50%;
+}
+
+.testimonial-logo-dark {
+    width: auto;
+    max-width: 160px;
+    height: 40px;
+    padding: 7px 13px;
+    background: #222222;
+    border-radius: 6px;
+    object-fit: contain;
+}
+
+.testimonial-quote {
+    margin: 0;
+    flex: 1;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.65;
+    color: #3D3B3B;
+}
+
+.testimonial-meta {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #eeeeee;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #3D3B3B;
+}
+
+.testimonial-role {
+    margin-top: 2px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #BE3455;
+}
+
+@media (max-width: 1024px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+}
+
+/* ===== Podcast section (like brianpennie.com/podcast/ Automatic YouTube Gallery) ===== */
+.ayg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+/* Persistent top player */
+.podcast-player {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.podcast-player-container {
+    width: 100%;
+    margin: auto;
+}
+
+.podcast-player-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #000 center center no-repeat;
+}
+
+.podcast-player-frame iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+/* Video row (flex grid like .ayg-row + .ayg-col) */
+.podcast-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -.75em;
+}
+
+.podcast-item {
+    width: 100%;
+    padding: 0 .75em;
+    box-sizing: border-box;
+    margin-bottom: 1.5em;
+}
+
+.podcast-thumb {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+}
+
+.podcast-thumb:hover .podcast-thumb-img {
+    opacity: 0.85;
+}
+
+.podcast-thumb .podcast-thumb-img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 3px;
+    transition: opacity 300ms ease;
+}
+
+/* Now Playing badge (bottom-right) */
+.podcast-now-playing {
+    pointer-events: none;
+    display: none;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    z-index: 3;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: .35em .5em;
+    line-height: 1;
+    color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: .85em;
+}
+
+/* Centered play icon */
+.podcast-play-icon {
+    pointer-events: none;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 30%;
+    min-width: 36px;
+    min-height: 36px;
+    max-width: 64px;
+    max-height: 64px;
+    vertical-align: middle;
+    fill: #ffffff;
+    z-index: 3;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.5));
+}
+
+/* Active video: hide play icon, show Now Playing badge */
+.podcast-item.active .podcast-play-icon {
+    display: none !important;
+}
+
+.podcast-item.active .podcast-now-playing {
+    display: inline-block !important;
+}
+
+/* Responsive columns (mirrors ayg-col-xs-2 / sm-3 / col-4) */
+@media only screen and (min-width: 420px) {
+    .podcast-item { width: 50%; }
+}
+
+@media only screen and (min-width: 600px) {
+    .podcast-item { width: 33.33%; }
+}
+
+@media only screen and (min-width: 768px) {
+    .podcast-item { width: 25%; }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .fade-in,
+    .fade-in-left,
+    .fade-in-right,
+    .reveal-bounce,
+    .contact-bg-glow,
+    .float-p {
+        opacity: 1 !important;
+        transform: none !important;
+        filter: none !important;
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* ===== Please Share section (after podcast videos) ===== */
+.share-section {
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 10px 25px 40px;
+}
+
+@media (min-width: 768px) {
+    .share-section {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+.share-label {
+    margin: 0 0 16px;
+    font-family: "Nunito Sans", "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1F2937;
+}
+
+.share-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.share-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.share-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.share-btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+.share-x { background-color: #111111; }
+.share-facebook { background-color: #1877F2; }
+.share-linkedin { background-color: #0A66C2; }
+.share-reddit { background-color: #FF4500; }
+.share-pinterest { background-color: #BD081C; }
+.share-telegram { background-color: #26A5E4; }
+.share-whatsapp { background-color: #25D366; }
+
+/* ====== FINAL THEME PASS: one heading size + one text size, responsive centering & padding ====== */
+
+/* --- One heading size (desktop) --- */
+h1, h2, h3, h4,
+#home-section .hero-graphic h1, #MyStory .hero-graphic h1,
+#Podcast .hero-graphic h1, #Keynotes .hero-graphic h1,
+#Consultancy .hero-graphic h1, #Beyondresis .hero-graphic h1,
+#programme .hero-graphic h1, #courses .hero-graphic h1,
+.hero-story-title, .footer-heading, .focus-card-title,
+.keynote-card-title, .keynote-talk-sub, .consult-card-title,
+.method-card-title, .consult-method-title, .footer-col-head,
+.share-title {
+    font-size: 40px !important;
+    line-height: 1.2 !important;
+}
+
+/* --- One body-text size (desktop) --- */
+p, .footer-desc, .hero-tagline, .hero-story,
+.focus-card-desc, .consult-card-desc, .consult-method-intro,
+.method-card-desc, .keynote-talk-tagline, .keynote-talk-title,
+.keynote-list h5, .keynote-list li, .footer-contact-list li,
+.footer-link-list a, .footer-link-list li.no-link,
+.footer-copy, .share-text, .keynote-banner-sub {
+    font-size: 17px !important;
+    line-height: 1.6 !important;
+}
+
+/* Eyebrow labels stay small (they are labels, not headings) */
+.footer-label {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    letter-spacing: 4.5px !important;
+}
+
+/* --- Tablet & below: center content, add padding --- */
+@media (max-width: 1024px) {
+    main > section,
+    .footer-contact,
+    .footer-dark,
+    .share-section {
+        padding: 48px 24px !important;
+    }
+
+    main > section,
+    .footer-contact,
+    .footer-dark,
+    .share-section,
+    .hero-inner,
+    .hero-graphic,
+    #BAnner-text {
+        text-align: center;
+    }
+
+    main .flex,
+    .keynote-talks,
+    .keynote-talk,
+    .keynote-talk-right,
+    .keynote-grid,
+    .consult-grid,
+    .focus-grid,
+    .method-grid,
+    .testimonials-grid,
+    .subscribe-form {
+        align-items: center;
+    }
+
+    main .flex,
+    .subscribe-form {
+        justify-content: center;
+    }
+}
+
+/* --- Mobile: smaller unified type + everything centered + padded --- */
+@media (max-width: 767px) {
+    h1, h2, h3, h4,
+    #home-section .hero-graphic h1, #MyStory .hero-graphic h1,
+    #Podcast .hero-graphic h1, #Keynotes .hero-graphic h1,
+    #Consultancy .hero-graphic h1, #Beyondresis .hero-graphic h1,
+    #programme .hero-graphic h1, #courses .hero-graphic h1,
+    .hero-story-title, .footer-heading, .focus-card-title,
+    .keynote-card-title, .keynote-talk-sub, .consult-card-title,
+    .method-card-title, .consult-method-title, .footer-col-head,
+    .share-title {
+        font-size: 28px !important;
+        line-height: 1.2 !important;
+        text-align: center !important;
+    }
+
+    p, .footer-desc, .hero-tagline, .hero-story,
+    .focus-card-desc, .consult-card-desc, .consult-method-intro,
+    .method-card-desc, .keynote-talk-tagline, .keynote-talk-title,
+    .keynote-list h5, .keynote-list li, .footer-contact-list li,
+    .footer-link-list a, .footer-link-list li.no-link,
+    .footer-copy, .share-text, .keynote-banner-sub {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+    }
+
+    h1, h2, h3, h4, h5, h6, p,
+    .footer-label, .footer-heading, .footer-desc,
+    .hero-graphic, .hero-inner, #BAnner-text,
+    .btn, .submit-btn, .keynote-talk, .keynote-talk-body,
+    .keynote-talk-right, .keynote-card, .consult-card,
+    .method-card, .testimonial-card, .focus-card,
+    .subscribe-wrap, .footer-dark {
+        text-align: center !important;
+    }
+
+    main .flex,
+    .keynote-talks,
+    .keynote-talk,
+    .keynote-talk-right,
+    .keynote-grid,
+    .consult-grid,
+    .focus-grid,
+    .method-grid,
+    .testimonials-grid,
+    .subscribe-form {
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    #home-section, #MyStory, #Podcast, #Keynotes,
+    #Consultancy, #Beyondresis, #programme, #courses,
+    .footer-contact, .footer-dark, .share-section {
+        padding: 40px 16px !important;
+    }
+}

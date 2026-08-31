@@ -1,0 +1,1741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainPannie.com-Change is possible</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind CSS and Daisy Ui -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <!-- This is for header Section -->
+      <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;family=Nunito+Sans:wght@400;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@100..900&amp;family=Poppins:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#005e35",
+                        "primary": "#9d183e",
+                        "on-background": "#1a1c1c",
+                        "on-error-container": "#93000a",
+                        "surface-container": "#eeeeee",
+                        "on-primary-fixed-variant": "#8e0935",
+                        "tertiary-container": "#007946",
+                        "secondary": "#5e5e5e",
+                        "tertiary-fixed-dim": "#79da9d",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-tint": "#b0294b",
+                        "on-tertiary-fixed-variant": "#00522e",
+                        "tertiary-fixed": "#95f7b8",
+                        "on-primary-fixed": "#400012",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed": "#e2e2e2",
+                        "on-error": "#ffffff",
+                        "outline": "#8c7073",
+                        "surface-container-highest": "#e2e2e2",
+                        "deep-maroon": "#8E263F",
+                        "inverse-primary": "#ffb2bc",
+                        "secondary-fixed-dim": "#c6c6c6",
+                        "outline-variant": "#dfbfc2",
+                        "on-secondary-fixed": "#1b1b1b",
+                        "slate-gray": "#4A4A4A",
+                        "error": "#ba1a1a",
+                        "on-surface": "#1a1c1c",
+                        "on-secondary-container": "#646464",
+                        "on-primary-container": "#ffe3e5",
+                        "surface": "#f9f9f9",
+                        "on-tertiary-container": "#9cfebe",
+                        "primary-fixed": "#ffd9dd",
+                        "secondary-container": "#e2e2e2",
+                        "surface-dim": "#dadada",
+                        "on-surface-variant": "#584143",
+                        "primary-fixed-dim": "#ffb2bc",
+                        "background": "#f9f9f9",
+                        "inverse-surface": "#2f3131",
+                        "on-primary": "#ffffff",
+                        "surface-muted": "#F9F9F9",
+                        "on-secondary-fixed-variant": "#474747",
+                        "primary-container": "#be3455",
+                        "inverse-on-surface": "#f0f1f1",
+                        "surface-variant": "#e2e2e2",
+                        "surface-container-low": "#f3f3f4",
+                        "on-tertiary-fixed": "#00210f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "section-gap-mobile": "64px",
+                        "section-gap": "120px",
+                        "container-max-width": "1200px"
+                    },
+                    "fontFamily": {
+                        "display-hero-mobile": ["Poppins"],
+                        "label-caps": ["Nunito Sans"],
+                        "headline-md": ["Poppins"],
+                        "display-hero": ["Poppins"],
+                        "body-lg": ["Nunito Sans"],
+                        "headline-lg": ["Poppins"],
+                        "body-md": ["Nunito Sans"]
+                    },
+                    "fontSize": {
+                        "display-hero-mobile": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-caps": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "800" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "display-hero": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .text-balance {
+                text-wrap: balance;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- TopNavBar -->
+    <header class="w-full top-0 sticky z-[1002]">
+        <!-- Top Bar -->
+        <div class="top-bar bg-black text-on-primary py-2 px-gutter">
+        <div class="max-w-[1200px] mx-auto flex justify-between items-center">
+        <div class="flex items-center font-body-md text-sm">
+        <span class="material-symbols-outlined text-sm mr-2">send</span>
+        <a class="hover:underline" href="mailto:info@brianpennie.com">info@brianpennie.com</a>
+        </div>
+        <div class="flex items-center gap-4">
+        <a class="hover:opacity-80" href="https://www.linkedin.com/in/brian-pennie/" target="_blank" aria-label="LinkedIn"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="#ffffff"><path d="M4.98 3.5C4.98 4.881 3.87 6 2.5 6S.02 4.881.02 3.5C.02 2.12 1.13 1 2.5 1s2.48 1.12 2.48 2.5zM.015 8h5V24h-5V8zm7.655 0h4.78v2.185h.068c.666-1.26 2.29-2.588 4.713-2.588 5.04 0 5.968 3.317 5.968 7.63V24h-4.988v-8.156c0-1.946-.034-4.45-2.71-4.45-2.713 0-3.128 2.12-3.128 4.31V24H7.67V8z"/></svg></a>
+        <a class="hover:opacity-80" href="https://www.instagram.com/brianpenniephd/?hl=en" target="_blank" aria-label="Instagram"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="#ffffff"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+        <a class="hover:opacity-80" href="https://www.youtube.com/@brianpenniephd1073/videos" target="_blank" aria-label="YouTube"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="#ffffff"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+        </div>
+        </div>
+        </div>
+        <!-- Main Nav Bar -->
+        <div class="main-nav bg-primary-container text-on-primary py-4 px-gutter relative z-20">
+        <div class="max-w-[1200px] mx-auto flex flex-col items-center justify-center gap-3 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-center">
+        <div class="flex flex-col items-center justify-center gap-3 lg:hidden">
+        <a class="flex justify-center flex-shrink-0" href="/">
+        <img alt="Brian Pennie Logo" class="logo-img h-12 w-auto" src="assets/imgi_1_brian-logo-test.png"/>        
+        </a>
+        <button aria-label="Toggle Menu" class="hamburger-btn" id="hamburgerBtn" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        </button>
+        </div>
+        <!-- Left Links -->
+          <nav class="hidden lg:flex items-center justify-evenly gap-6 font-label-caps text-lg w-full">
+         <a class="opacity-60 hover:opacity-100 transition-opacity" href="#home-section">Home</a>
+        <a class="hover:opacity-80 transition-opacity" href="#MyStory">My Story</a>
+        <a class="hover:opacity-80 transition-opacity" href="#Podcast">Podcast</a>
+        <a class="hover:opacity-80 transition-opacity" href="#Keynotes">Keynotes</a>
+        </nav>
+        <!-- Center Logo -->
+        <a class="hidden lg:flex justify-center flex-shrink-0" href="/">
+        <img alt="Brian Pennie Logo" class="logo-img h-12 w-auto" src="assets/imgi_1_brian-logo-test.png"/>        
+        </a>
+        <!-- Right Links -->
+           <nav class="hidden lg:flex items-center justify-evenly gap-6 font-label-caps text-lg w-full relative">
+        <a class="hover:opacity-80 transition-opacity" href="#Consultancy">Consultancy</a>
+        <div class="relative group">
+        <a class="flex items-center hover:opacity-80 transition-opacity cursor-pointer" href="#">
+                                For Organisations <span class="material-symbols-outlined text-sm ml-1 transition-transform duration-300 group-hover:rotate-180">expand_more</span>
+        </a>
+        <div class="absolute top-full left-0 pt-4 w-52 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50">
+        <div class="bg-surface-container-lowest text-on-surface shadow-md rounded flex flex-col overflow-hidden border border-surface-container">
+        <a class="block px-4 py-3 hover:bg-surface-container-low hover:text-primary-container transition-colors font-body-md text-sm normal-case tracking-normal" href="#Beyondresis">Beyond Resilience</a>
+        <a class="block px-4 py-3 hover:bg-surface-container-low hover:text-primary-container transition-colors font-body-md text-sm normal-case tracking-normal" href="#programme">Programme for Life</a>
+        </div>
+        </div>
+        </div>
+        <a class="hover:opacity-80 transition-opacity" href="#courses">Courses</a>
+        <a class="hover:opacity-80 transition-opacity" href="#contact">Contact</a>
+        </nav>
+        </div>
+        </div>
+    </header>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <!-- Mobile Menu Drawer (slides in from left, ElementsKit style) -->
+    <div class="mobile-menu-drawer" id="mobileMenuDrawer" aria-hidden="true">
+        <div class="elementskit-nav-identity-panel">
+            <a class="elementskit-nav-logo" href="/">
+                <img alt="Brian Pennie Logo" class="drawer-logo" src="assets/imgi_1_brian-logo-test.png" />
+            </a>
+            <button class="mobile-menu-close" id="mobileMenuClose" type="button" aria-label="Close Menu">X</button>
+        </div>
+        <div class="mobile-menu-links">
+            <a class="mobile-link active" href="#home-section">Home</a>
+            <a class="mobile-link" href="#MyStory">My Story</a>
+            <a class="mobile-link" href="#Podcast">Podcast</a>
+            <a class="mobile-link" href="#Keynotes">Keynotes</a>
+            <div class="mobile-dropdown">
+                <a class="mobile-link mobile-dropdown-toggle" href="#">
+                    Corporate Courses
+                    <span class="material-symbols-outlined text-sm">expand_more</span>
+                </a>
+                <div class="mobile-dropdown-menu">
+                    <a class="mobile-link sub" href="#Beyondresis">Beyond Resilience</a>
+                    <a class="mobile-link sub" href="#programme">Programme for Life</a>
+                </div>
+            </div>
+            <a class="mobile-link" href="#Consultancy">Consultancy</a>
+            <a class="mobile-link" href="#courses">Courses</a>
+            <a class="mobile-link" href="#contact">Contact</a>
+        </div>
+    </div>
+    <main>
+         <!-- Home Section -->
+         <section  id="home-section">
+            <!-- Banner -->
+            <div>
+                <div
+                  class="hero-banner"
+                  style="background-image: url(assets/imgi_22_ChangeIsPossible-135-scaled-e1732046730258.jpg);"
+                >
+                  <div class="hero-overlay"></div>
+                  <div class="hero-inner" id="BAnner-text">
+                    <div class=" w-lg lg:w-full hero-graphic reveal reveal-zoom" style="--d:120ms">
+                      <img src="assets/imgi_3_Artboard-1.png" class="" alt="Text">
+                    </div>
+                    <p class="text-white text-sm lg:text-xl lg:hero-tagline ml-20 reveal reveal-up hero-story" style="--d:380ms">
+                      Through keynotes, courses, consultancy, and honest conversation, I help people build resilience, navigate change, and create lasting transformation.
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <!-- Vedio -->
+            <div>
+                <div class="video-section ite fade-in">
+                   <div class="video-inner">
+                       <div class="video-embed">
+                           <iframe width="560" height="315" src="https://www.youtube.com/embed/7h2P0_4twAI?si=30MP_kuxSfMb3NJw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                       </div>
+                   </div>
+                </div>
+            </div>
+            <!-- Clients -->
+            <div class="footer-contact" id="clients">
+            <div class="relative z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 md:grid-cols-2 gap-0 w-full">
+                <!-- Left Col -->
+                <div class="md:pr-8 flex flex-col justify-center">
+                    <p class="footer-label">Client&rsquo;s</p>
+                    <h2 class="footer-heading">Partners in <br><span style="color: #BE3455;">transformation</span></h2>
+                    <p class="footer-desc">
+                        With a track record of delivering exceptional results and unwavering dedication to my clients, We have earned a reputation for integrity, expertise, and reliability.
+                    </p>
+                    
+                </div>
+                <!-- Right Col: Form -->
+                <div class="md:pl-4 grid grid-cols-4 mt-10 lg:mt-0 md:grid-cols-4 gap-4 md:justify-center mb-10">
+                   <img class="imageH" src="assets/imgi_5_DAVY.png" alt="Logo">
+                   <img class="imageH" src="assets/imgi_23_Amazon-Dark-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_24_Pfizer-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_25_EY-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_26_KPMG-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_27_MSD-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_28_Mercury-150x150.png" alt="Logo">
+                   <img class="imageH" src="assets/imgi_29_Sanofi-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_30_primark-logo-150x150.jpg" alt="Logo">
+                   <img class="imageH" src="assets/imgi_31_Matheson-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_32_rteAsset-1@300x-1-150x150.png" alt="Logo">
+                   <img class="imageH" src="assets/imgi_7_aib.png" alt="Logo">
+                   <img class="imageH" src="assets/imgi_33_BoI.png" alt="Logo">
+                   <img class="imageH" src="assets/imgi_34_Indeed-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_35_Artboard-1-150x150.png" alt="Logo">
+                   <img class="imageH" src="assets/imgi_36_newArtboard-1-150x150.png" alt="Logo">
+                </div>
+            </div>
+        </div>
+            <!-- Focus -->
+            <div id="focus-section" class=" flex mx-auto w-full flex-col items-center">
+                <p class="footer-label max-w-5xl">Focus</p>
+                <h2 class="footer-heading max-w-5xl">Service <span style="color: #BE3455;">in</span> Detail</h2>
+                <div class="flex mt-10 items-center gap-20 justify-between flex-col lg:flex-row">
+                    <!-- image -->
+                     <img class=" w-70 lg:w-120" src="assets/imgi_37_D25526-0345-scaled.jpg" alt="Person">
+                     <div class="flex flex-col items-center max-w-3xl lg:max-w-5xl">
+                        <h2 class="footer-heading mb-10">Key<span style="color: #BE3455;">notes</span></h2>
+                        <p class="footer-desc text-xl">Speaking on a range of issues including real <br> resilience, values-based living, emotional <br> awareness, and positive mental health, <br> Brian’s remarkable life story inspires and <br> enthrals in equal measure. <br> <br>
+                        Combining actionable techniques and <br> evidence-based methods acquired through <br> Brian’s academic career and life experiences, <br> his inspirational and uplifting talks truly get to <br> the heart of the matter</p>
+                        <a href="" class="btn mt-15 bg-red-700 px-10 text-white">Lean More</a>
+                     </div>
+                </div>
+                <!-- 2 -->
+                 <div class="flex mt-10 items-center gap-20 justify-between flex-col-reverse lg:flex-row">
+                    <div class="flex flex-col items-center max-w-3xl lg:max-w-5xl">
+                        <h2 class="footer-heading mb-10">Corporate <span style="color: #BE3455;">Courses</span></h2>
+                        <p class="footer-desc text-xl">Our corporate courses are designed to help you unleash <br> your team’s potential, driving productivity at work and <br> happiness at home. Available both online and in-person, <br> these specifically tailored programmes are designed and <br> developed with your precise needs in mind.</p>
+                        <a href="" class="btn mt-15 bg-red-700 px-10 text-white">Lean More</a>
+                     </div>
+                    <!-- image -->
+                     <img class=" w-70 lg:w-120" src="assets/imgi_38_D25526-0366-scaled.jpg" alt="Person">
+                     
+                </div>
+                <!-- 3 -->
+                 <div class="flex mt-10 items-center gap-20 justify-between flex-col lg:flex-row">
+                    <!-- image -->
+                     <img class=" w-70 lg:w-120" src="assets/imgi_39_Screenshot-2023-12-11-at-3.41.51.png" alt="Person">
+                     <div class="flex flex-col items-center max-w-3xl lg:max-w-5xl">
+                        <h2 class="footer-heading mb-10">Consul<span style="color: #BE3455;">tency</span></h2>
+                        <p class="footer-desc text-xl">Organisations are under more pressure than <br> ever: change, restructuring, hybrid working, <br>technology, culture shifts, burnout, and <br> disconnection can all affect how people think, <br> feel, and perform. <br><br>
+
+                        Our consultancy work helps leaders and <br> teams make sense of these challenges and <br> respond with practical, evidence-informed solutions. <br> <br>
+
+                        Whether you need strategic guidance, a <br> bespoke training approach, leadership <br> support, culture work, or one-to-one <br>coaching, we can help your organisation <br> create meaningful change across four key areas.</p>
+                        <a href="" class="btn mt-15 bg-red-700 px-10 text-white">Lean More</a>
+                     </div>
+                </div>
+            </div>
+            <!-- Testimonials -->
+            <div>
+                
+            </div>
+            <!-- Subscribe for updates -->
+            <div>
+                <div class="footer-contact subscribe-wrap">
+                    <div class="relative z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 w-full">
+                        <div class="text-center mb-10">
+                            <p class="footer-label">Newsletter</p>
+                            <h2 class="footer-heading"><span style="color: #BE3455;">Subscribe </span>for updates.</h2>
+                            <p class="footer-desc">Get regular updates, exclusive offers, and valuable free resources. Elevate your potential today.</p>
+                        </div>
+                        <form class="subscribe-form" novalidate>
+                            <div class="field">
+                                <label class="sr-only" for="sub-name">Name</label>
+                                <input type="text" id="sub-name" name="name" placeholder="Your Name" required />
+                            </div>
+                            <div class="field">
+                                <label class="sr-only" for="sub-email">Email</label>
+                                <input type="email" id="sub-email" name="email" placeholder="Your Email Address" required />
+                            </div>
+                            <button class="submit-btn" type="submit">Subscribe</button>
+                            <p class="form-message">Thanks! You&rsquo;re on the list.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Book -->
+            <div>
+                 <div class="footer-contact" id="book">
+            <div id="bookGrid" class="relative z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 md:grid-cols-2 gap-0 w-full">
+                <!-- Left Col -->
+                <div class="md:pr-8 flex flex-col justify-center">
+                    <p class="footer-label">Book&rsquo;s</p>
+                    <h2 class="footer-heading"><span style="color: #BE3455;">Bonus </span>Time</h2>
+                    <i class="footer-desc">
+                        <strong>A true story of surviving the worstand discovering the magic of every day.</strong>
+                    </i>
+                    <p class="footer-desc text-xl">In this incredibly honest and inspirational book, I <br> tell the story of how I turned my seemingly <br> hopeless existence into a rich and rewarding <br> life, showing that change is always possible, <br> no matter how stuck we feel.</p>
+                    <button class="btn bg-red-600 font-bold text-white mt-5"  type="submit">Buy Now!</button>
+                </div>
+                <img src="assets/imgi_41_Bonus-Time.jpg" alt="">
+            </div>
+        </div>
+            </div>
+            <!-- About me  -->
+            <div></div>
+         </section>
+         <!-- My Story -->
+          <section id="MyStory">
+            <!-- Banner -->
+            <div>
+                <div
+                  class="hero-banner"
+                  style="background-image: url(assets/imgi_10_main.jpg);"
+                >
+                    <div class="hero-overlay"></div>
+                  <div class="hero-inner" id="BAnner-text">
+                    <div class=" w-lg lg:w-full hero-graphic reveal reveal-zoom" style="--d:120ms">
+                      <h1 class=" ml-25 text-white text-2xl lg:text-7xl font-bold">My <br> <span class="text-red-600">Story</span></h1>
+                  </div>
+                </div>
+            </div>
+                <!-- About me -->
+            <div class="footer-contact" id="book">
+                <div id="bookGrid" class="relative z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 md:grid-cols-2 gap-0 w-full">
+                    <!-- Left Col -->
+                    <div class="md:pr-8 flex flex-col justify-center">
+                        <p class="footer-label">About me</p>
+                        <h2 class="footer-heading">I'm Dr <span style="color: #BE3455;">Brain </span>Pennie</h2>
+                        
+                        <p class="footer-desc text-base sm:text-lg md:text-xl lg:text-xl leading-relaxed">I'm Dr Brian Pennie.
+
+                        I’m a neuroscientist, keynote speaker, author, podcast host, and behaviour change specialist. My work combines neuroscience, lived experience, and practical tools to help people and organisations create meaningful, lasting change. <br>
+
+                        After overcoming a 15-year heroin addiction, I rebuilt my life, completed a PhD in neuroscience, lectured in Trinity College Dublin, founded an award-winning healthcare communications agency, and now work with leaders, teams, schools, and organisations across Ireland and beyond. <br>
+
+                        Through keynotes, workshops, coaching, and consulting, I help people understand the science of change… and apply it in real life.
+                        <br>
+                        Because no matter where you start, change is possible.</p>
+                        
+                    </div>
+                        <img src="assets/imgi_11_CMC989804-231a.jpg" alt="">
+                </div>
+                </div>
+             <!-- Vedio -->
+            <div>
+                <div class="video-section ite fade-in">
+                   <div class="video-inner">
+                       <div class="video-embed" data-video="392JdwQZoBg">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/392JdwQZoBg?si=cZZxPcgoLAJDhG2v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                       </div>
+                   </div>
+                </div>
+            </div>
+            <!-- My Story -->
+              <div class="footer-contact" id="book">
+                <div id="bookGrid" class="relative z-10 gap-8 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 md:grid-cols-2  w-full">
+                    <img src="assets/imgi_12_Screenshot-2023-12-18-at-11.50.08.png" alt="">
+                    <!-- Left Col -->
+                    <div class="md:pr-8 flex flex-col justify-center">
+                        <p class="footer-label">MY story</p>
+                        <h2 class="footer-heading"><span style="color: #BE3455;">I was a  </span>Heroin Addict</h2>
+                       
+                        <p class="footer-desc text-xl">One autumn day in October 2013, my life changed forever. By then, I had been a heroin addict for more than 15 years and it was slowly killing me. That day, in what seemed like an instant, the world seemed to glow. Captivated by this sudden change, I started to question why I felt so alive. I didn’t see it at first, but then it hit me. It had tortured me my entire life. The voices in my head, the stories that I spun myself – the ones that drove my anxiety and, in turn, my addiction. They were gone. For as long as I could remember, thinking had consumed me – my mind racing about what I needed to do, tirelessly working out ways to escape my bodily agitations. But now, the voices were silent. My anxiety was gone. The race was over and my new life had begun.</p>
+                        
+                    </div> 
+                </div>
+                </div>
+             <!-- A Second chance -->
+              <div class="footer-contact" id="book">
+                <div id="bookGrid" class="relative z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 md:grid-cols-2 gap-0 w-full">
+                    <!-- Left Col -->
+                    <div class="md:pr-8 flex flex-col justify-center">
+                        <p class="footer-label">A second chance</p>
+                        <h2 class="footer-heading"><span style="color: #BE3455;">Bonus </span>Time</h2>
+                        
+                        <p class="footer-desc text-xl">This sudden shift in perspective set me off on an amazing journey, and with a newfound love of learning, I went to university to study the human mind. I had so many questions: What is a perspective shift? Why did I feel so alive? What is the relationship between anxiety and the voice in our heads? Why do people suffer? How can I help others escape their suffering?
+                        <br> <br>
+                        Life had gifted me a second chance, but after so many years of addiction, I had no idea how to live in the real world. With that, I began to develop what I called a ‘Programmefor Life,’ a framework that would help me to master my mental, emotional, and external world. It worked, helpingme to become a doctor of psychology, a neuroscientist,a published author, a lecturer at the top two universitiesin Ireland, and a coach to some of Ireland’s most influential leaders.
+                            <br><br>
+                        Most importantly, I now have a beautiful relationship with anxiety, helping me to live life in an energetic, emboldened, and carefree way.</p>
+                        
+                    </div>
+                        <img src="assets/imgi_13_Screenshot-2023-12-18-at-12.24.45.png" alt="">
+                </div>
+                </div>
+                <!-- A New Life -->
+                 <div class="footer-contact" id="book">
+                <div id="bookGrid" class="relative gap-8 z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 md:grid-cols-2  w-full">
+                    <img src="assets/imgi_14_Screenshot-2023-12-18-at-12.38.03.png" alt="">
+                    <!-- Left Col -->
+                    <div class="md:pr-8 flex flex-col justify-center">
+                        <p class="footer-label">A new life</p>
+                        <h2 class="footer-heading"><span style="color: #BE3455;">A New </span>Purpose</h2>
+                        
+                        <p class="footer-desc text-xl">Now that I’d conquered my own struggles, I wanted to share my programme with others who might need it.
+                        <br><br>
+                        I began speaking in schools, and after one talk in 2016, a 14-year-old kid approached me. With incredible enthusiasm and energy, he told me “I’m going to do this. I’m going to do everything you said.” This sparked something visceral inside of me. I’d never felt so alive. With a fire in my belly and a mission to share what I’d learned, I began refining my Programme for Life, creating my own business called Change is Possible.
+                                
+                        Through this company, I deliver workshops and keynote talks to some of the world’s largest organisations. But I never forgot my roots, and I provide mentorship programmes, talks, and workshops to schools and prisons around Ireland.</p>
+                        
+                </div>
+                </div>
+                <!-- Vedio 2 -->
+                 <div>
+                <div class="video-section ite fade-in">
+                   <div class="video-inner">
+                       <div class="video-embed">
+                           <iframe width="560" height="315" src="https://www.youtube.com/embed/GRE87v3Ztmo?si=996PC_RSzu_u2AcL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                       </div>
+                   </div>
+                </div>
+            </div>
+            <!-- Clients -->
+             <div class="footer-contact" id="clients">
+            <div class="relative z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 md:grid-cols-2 gap-0 w-full">
+                <!-- Left Col -->
+                <div class="md:pr-8 flex flex-col justify-center">
+                    <p class="footer-label">Client&rsquo;s</p>
+                    <h2 class="footer-heading">Partners in <br><span style="color: #BE3455;">transformation</span></h2>
+                    <p class="footer-desc">
+                        With a track record of delivering exceptional results and unwavering dedication to my clients, We have earned a reputation for integrity, expertise, and reliability.
+                    </p>
+                    
+                </div>
+                <!-- Right Col: Form -->
+                <div class="md:pl-4 grid grid-cols-4 mt-10 lg:mt-0 md:grid-cols-4 gap-4 md:justify-center mb-10">
+                   <img class="imageH" src="assets/imgi_5_DAVY.png" alt="Logo">
+                   <img class="imageH" src="assets/imgi_23_Amazon-Dark-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_24_Pfizer-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_25_EY-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_26_KPMG-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_27_MSD-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_28_Mercury-150x150.png" alt="Logo">
+                   <img class="imageH" src="assets/imgi_29_Sanofi-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_30_primark-logo-150x150.jpg" alt="Logo">
+                   <img class="imageH" src="assets/imgi_31_Matheson-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_32_rteAsset-1@300x-1-150x150.png" alt="Logo">
+                   <img class="imageH" src="assets/imgi_7_aib.png" alt="Logo">
+                   <img class="imageH" src="assets/imgi_33_BoI.png" alt="Logo">
+                   <img class="imageH" src="assets/imgi_34_Indeed-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_35_Artboard-1-150x150.png" alt="Logo">
+                   <img class="imageH" src="assets/imgi_36_newArtboard-1-150x150.png" alt="Logo">
+                </div>
+            </div>
+        </div>
+        <!-- Bonus Time -->
+          <div>
+                 <div class="footer-contact" id="book">
+            <div id="bookGrid" class="relative z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 md:grid-cols-2 gap-0 w-full">
+                <!-- Left Col -->
+                <div class="md:pr-8 flex flex-col justify-center">
+                    <p class="footer-label">Book&rsquo;s</p>
+                    <h2 class="footer-heading"><span style="color: #BE3455;">Bonus </span>Time</h2>
+                    <i class="footer-desc">
+                        <strong>A true story of surviving the worstand discovering the magic of every day.</strong>
+                    </i>
+                    <p class="footer-desc text-xl">In this incredibly honest and inspirational book, I <br> tell the story of how I turned my seemingly <br> hopeless existence into a rich and rewarding <br> life, showing that change is always possible, <br> no matter how stuck we feel.</p>
+                    
+                </div>
+                <img src="assets/imgi_41_Bonus-Time.jpg" alt="">
+            </div>
+        </div>
+            </div>
+          </section>
+           <!-- Podcasts -->
+           <section id="Podcast">
+            <!-- Banner -->
+            <div>
+                <div
+                  class="hero-banner"
+                  style="background-image: url(assets/imgi_27_Screenshot-2026-02-28-212855.png);"
+                >
+                    <div class="hero-overlay"></div>
+                  <div class="hero-inner" id="BAnner-text">
+                    <div class=" w-lg lg:w-full hero-graphic reveal reveal-zoom" style="--d:120ms">
+                      <h1 class=" ml-25 text-white text-2xl lg:text-7xl font-bold">POD<span class="text-red-600">CAST</span></h1>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <!-- Main Section -->
+              <div>
+                 <div class="footer-contact" id="book">
+            <div id="bookGrid" class="relative z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 gap-0 w-full">
+                <!-- Left Col -->
+                <div class="md:pr-8 flex flex-col mb-10 justify-center">
+                    <p class="footer-label">Welcome to brian&rsquo;s</p>
+                    <h2 class="footer-heading"><span style="color: #BE3455;">Pod</span>cast</h2>
+                    
+                    <p class="footer-desc text-xl">On Change is Possible, I explore one central question: </p>
+                    <p class="footer-desc text-xl">How do poeple really change? </p>
+                    <p class="footer-desc text-xl">Through honest conversations with leading voices in psychology, neuroscience, health, recovery, leadership, and personal transformation, we unpack the forces that shape our lives… from trauma, identity, and emotion to behaviour, connection, and purpose. </p>
+                    <p class="footer-desc text-xl">Drawing on my own journey from heroin addiction to neuroscience, each episode blends lived experience, science, and real-world insight to help people understand themselves more deeply and create meaningful change. </p>
+                    <p class="footer-desc text-xl">Because no matter where you start, change is possible.</p>
+ 
+                     
+                </div>
+                <!-- Podcast player + video gallery (like brianpennie.com/podcast/) -->
+                <div class="ayg">
+                    <div class="podcast-player">
+                        <div class="podcast-player-container">
+                            <div class="podcast-player-frame" id="podcastPlayerFrame"></div>
+                        </div>
+                    </div>
+                    <div class="podcast-row">
+                        <!-- Video 1 -->
+                        <div class="podcast-item active" data-video-id="sp3eJrl6m9Q" data-title="When the Medals Stop: Losing Your Identity and Finding Yourself Again | David Gillick">
+                            <div class="podcast-thumb">
+                                <img class="podcast-thumb-img" src="https://i.ytimg.com/vi/sp3eJrl6m9Q/maxresdefault.jpg" alt="David Gillick" loading="lazy">
+                                <span class="podcast-now-playing">Now Playing</span>
+                                <svg class="podcast-play-icon" viewBox="0 0 24 24" aria-label="Play"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z" clip-rule="evenodd"/></svg>
+                            </div>
+                        </div>
+                        <!-- Video 2 -->
+                        <div class="podcast-item" data-video-id="5yKp8Pxkygc" data-title="From Lifespan to Soulspan: Dr Paddy Barrett on Health, Time and Living Before It's Too Late">
+                            <div class="podcast-thumb">
+                                <img class="podcast-thumb-img" src="https://i.ytimg.com/vi/5yKp8Pxkygc/maxresdefault.jpg" alt="Dr Paddy Barrett" loading="lazy">
+                                <span class="podcast-now-playing">Now Playing</span>
+                                <svg class="podcast-play-icon" viewBox="0 0 24 24" aria-label="Play"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z" clip-rule="evenodd"/></svg>
+                            </div>
+                        </div>
+                        <!-- Video 3 -->
+                        <div class="podcast-item" data-video-id="iFUmotUR9QY" data-title="The Psychology of Male Loneliness: Why So Many Men Are Quietly Falling Apart | Daragh Fleming">
+                            <div class="podcast-thumb">
+                                <img class="podcast-thumb-img" src="https://i.ytimg.com/vi/iFUmotUR9QY/maxresdefault.jpg" alt="Daragh Fleming" loading="lazy">
+                                <span class="podcast-now-playing">Now Playing</span>
+                                <svg class="podcast-play-icon" viewBox="0 0 24 24" aria-label="Play"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z" clip-rule="evenodd"/></svg>
+                            </div>
+                        </div>
+                        <!-- Video 4 -->
+                        <div class="podcast-item" data-video-id="TjyL6s3gldU" data-title="The Psychology of Money: Why Chasing More Never Makes You Happy | Eoin McGee">
+                            <div class="podcast-thumb">
+                                <img class="podcast-thumb-img" src="https://i.ytimg.com/vi/TjyL6s3gldU/maxresdefault.jpg" alt="Eoin McGee" loading="lazy">
+                                <span class="podcast-now-playing">Now Playing</span>
+                                <svg class="podcast-play-icon" viewBox="0 0 24 24" aria-label="Play"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z" clip-rule="evenodd"/></svg>
+                            </div>
+                        </div>
+                        <!-- Video 5 -->
+                        <div class="podcast-item" data-video-id="Be1Tk-WTC7Q" data-title="How to Heal Anxiety, Panic Attacks & the Fear of Fear | Caroline Foran">
+                            <div class="podcast-thumb">
+                                <img class="podcast-thumb-img" src="https://i.ytimg.com/vi/Be1Tk-WTC7Q/maxresdefault.jpg" alt="Caroline Foran" loading="lazy">
+                                <span class="podcast-now-playing">Now Playing</span>
+                                <svg class="podcast-play-icon" viewBox="0 0 24 24" aria-label="Play"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z" clip-rule="evenodd"/></svg>
+                            </div>
+                        </div>
+                        <!-- Video 6 -->
+                        <div class="podcast-item" data-video-id="fMp6JID8WUI" data-title="From Trauma to Inner Safety: Tara Rafter on Healing, Self-Belief & Finding Yourself">
+                            <div class="podcast-thumb">
+                                <img class="podcast-thumb-img" src="https://i.ytimg.com/vi/fMp6JID8WUI/maxresdefault.jpg" alt="Tara Rafter" loading="lazy">
+                                <span class="podcast-now-playing">Now Playing</span>
+                                <svg class="podcast-play-icon" viewBox="0 0 24 24" aria-label="Play"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z" clip-rule="evenodd"/></svg>
+                            </div>
+                        </div>
+                        <!-- Video 7 -->
+                        <div class="podcast-item" data-video-id="neIYat_xdSs" data-title="From Violence to Transformation: Bob Cullen's Journey Through Trauma, Addiction, Prison and Healing">
+                            <div class="podcast-thumb">
+                                <img class="podcast-thumb-img" src="https://i.ytimg.com/vi/neIYat_xdSs/maxresdefault.jpg" alt="Bob Cullen" loading="lazy">
+                                <span class="podcast-now-playing">Now Playing</span>
+                                <svg class="podcast-play-icon" viewBox="0 0 24 24" aria-label="Play"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z" clip-rule="evenodd"/></svg>
+                            </div>
+                        </div>
+                        <!-- Video 8 -->
+                        <div class="podcast-item" data-video-id="Se2cF2-C8Is" data-title="You've Been Lied to About Food">
+                            <div class="podcast-thumb">
+                                <img class="podcast-thumb-img" src="https://i.ytimg.com/vi/Se2cF2-C8Is/maxresdefault.jpg" alt="You've Been Lied to About Food" loading="lazy">
+                                <span class="podcast-now-playing">Now Playing</span>
+                                <svg class="podcast-play-icon" viewBox="0 0 24 24" aria-label="Play"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z" clip-rule="evenodd"/></svg>
+                            </div>
+                        </div>
+                        <!-- Video 9 -->
+                        <div class="podcast-item" data-video-id="QZHap9gp-_A" data-title="Dr Gabor Maté on Addiction, Trauma & Why You Were Never Broken">
+                            <div class="podcast-thumb">
+                                <img class="podcast-thumb-img" src="https://i.ytimg.com/vi/QZHap9gp-_A/maxresdefault.jpg" alt="Dr Gabor Maté" loading="lazy">
+                                <span class="podcast-now-playing">Now Playing</span>
+                                <svg class="podcast-play-icon" viewBox="0 0 24 24" aria-label="Play"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z" clip-rule="evenodd"/></svg>
+                            </div>
+                        </div>
+                        <!-- Video 10 -->
+                        <div class="podcast-item" data-video-id="7iae_X1J2ng" data-title="The Dopamine Trap: Dr Anna Lembke Explains Why Phones, Porn & Pleasure Are Making Us Miserable">
+                            <div class="podcast-thumb">
+                                <img class="podcast-thumb-img" src="https://i.ytimg.com/vi/7iae_X1J2ng/maxresdefault.jpg" alt="Dr Anna Lembke" loading="lazy">
+                                <span class="podcast-now-playing">Now Playing</span>
+                                <svg class="podcast-play-icon" viewBox="0 0 24 24" aria-label="Play"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z" clip-rule="evenodd"/></svg>
+                            </div>
+                        </div>
+                        <!-- Video 11 -->
+                        <div class="podcast-item" data-video-id="TM-rmvo6gPw" data-title="Busy, Wrecked & Ready for Change – Dermot Whelan on Anxiety, Purpose & Finding Space">
+                            <div class="podcast-thumb">
+                                <img class="podcast-thumb-img" src="https://i.ytimg.com/vi/TM-rmvo6gPw/maxresdefault.jpg" alt="Dermot Whelan" loading="lazy">
+                                <span class="podcast-now-playing">Now Playing</span>
+                                <svg class="podcast-play-icon" viewBox="0 0 24 24" aria-label="Play"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z" clip-rule="evenodd"/></svg>
+                            </div>
+                        </div>
+                        <!-- Video 12 -->
+                        <div class="podcast-item" data-video-id="AR94qRh2Kg0" data-title="The Other Self: The Strength You Don't Know You Have">
+                            <div class="podcast-thumb">
+                                <img class="podcast-thumb-img" src="https://i.ytimg.com/vi/AR94qRh2Kg0/maxresdefault.jpg" alt="The Other Self" loading="lazy">
+                                <span class="podcast-now-playing">Now Playing</span>
+                                <svg class="podcast-play-icon" viewBox="0 0 24 24" aria-label="Play"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z" clip-rule="evenodd"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Please Share -->
+                <div class="share-section">
+                    <p class="share-label">Please Share:</p>
+                    <div class="share-buttons">
+                        <a class="share-btn share-x" href="https://twitter.com/intent/tweet?url=" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                        <a class="share-btn share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener" aria-label="Share on Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                        <a class="share-btn share-linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                        <a class="share-btn share-reddit" href="https://www.reddit.com/submit?url=" target="_blank" rel="noopener" aria-label="Share on Reddit"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg></a>
+                        <a class="share-btn share-pinterest" href="https://pinterest.com/pin/create/button/?url=" target="_blank" rel="noopener" aria-label="Share on Pinterest"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/></svg></a>
+                        <a class="share-btn share-telegram" href="https://t.me/share/url?url=" target="_blank" rel="noopener" aria-label="Share on Telegram"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+                        <a class="share-btn share-whatsapp" href="https://api.whatsapp.com/send?text=" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+           </section>
+           <!-- Keynotes -->
+            <section id="Keynotes">
+            <!-- Banner -->
+            <div>
+                <div
+                  class="hero-banner"
+                  style="background-image: url(assets/imgi_22_CMC989804-236-scaled.jpg);"
+                >
+                    <div class="hero-overlay"></div>
+                  <div class="hero-inner" id="BAnner-text">
+                    <div class=" w-lg lg:w-full hero-graphic reveal reveal-zoom" style="--d:120ms">
+                      <h1 class=" ml-25 text-white text-2xl lg:text-7xl font-bold">Key<span class="text-red-600">notes</span></h1>
+                  </div>
+                </div>
+            </div>
+            </div>
+                <!-- Vedio -->
+                  <div>
+                <div class="video-section ite fade-in">
+                   <div class="video-inner">
+                       <div class="video-embed">
+                           <iframe width="560" height="315" src="https://www.youtube.com/embed/pouIvorGrsY?si=toleiS8LmUAI7KEg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                       </div>
+                   </div>
+                </div>
+            </div>
+            <!-- Benefits -->
+            <div class="footer-contact" id="book">
+                <div class="relative z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] w-full">
+                    <div class="text-center mb-10">
+                        <p class="footer-label">Benefits</p>
+                        <h2 class="footer-heading">The <span style="color: #BE3455;">Value</span> Brian Brings</h2>
+                    </div>
+                    <div class="keynote-grid">
+                        <!-- Inspire -->
+                        <div class="keynote-card">
+                            <img class="keynote-icon" src="assets/icon_inspire.png" alt="">
+                            <h3 class="keynote-card-title"><span style="color:#BE3455;">In</span>spire</h3>
+                            <p class="footer-desc">Brian uses powerful stories and proven techniques to create talks that stay with people for years. Every session is peppered with practical, real-world takeaways, ideas your audience can take with them and apply to any situation in their everyday life.</p>
+                        </div>
+                        <!-- Inform -->
+                        <div class="keynote-card">
+                            <img class="keynote-icon" src="assets/icon_inform.png" alt="">
+                            <h3 class="keynote-card-title"><span style="color:#BE3455;">In</span>form</h3>
+                            <p class="footer-desc">Brian combines evidence-based research with his own lived experience to show that change is possible for everyone, even the most determined doubters. Every keynote is grounded in science, ensuring sessions that are both insightful and informative.</p>
+                        </div>
+                        <!-- Ignite -->
+                        <div class="keynote-card">
+                            <img class="keynote-icon" src="assets/icon_ignite.png" alt="">
+                            <h3 class="keynote-card-title"><span style="color:#BE3455;">Ig</span>nite</h3>
+                            <p class="footer-desc">Brian brings a down-to-earth approach and a calm, emotionally grounded delivery that connects with people in a real way, igniting their own motivation. His tailored keynotes help them leave feeling empowered and ready to take on the world.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Overview -->
+             <div>
+                 <div>
+                 <div class="footer-contact" id="book">
+            <div id="bookGrid" class="relative z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 gap-0 w-full">
+                <!-- Left Col -->
+                <div>
+                    <p class="footer-label">Overview</p>
+                    <h2 class="footer-heading">Inside Brians <span style="color: #BE3455;">Keynotes</span></h2>
+                    <div class="keynote-talks">
+                        <!-- Talk 1 -->
+                        <div class="keynote-talk">
+                            <div class="keynote-talk-body">
+                                <p class="footer-label">How to Find Your True North:</p>
+                                <h3 class="keynote-talk-sub">A <span style="color:#BE3455;">Guidance</span> System for Life</h3>
+                                <p class="keynote-talk-tagline">Bring your people on a robust, hands-on journey to find their true authentic selves.</p>
+                                <p class="footer-desc">Too often, we allow our feelings determine how we act instead of ensuring our actions determine how we feel. But how do we know what actions to take? In this talk, Brian will demonstrate the immense power of creating a values-based framework. And he will show how our values provide a pathway to help us define what's important in our lives and provide the guidance to get there.</p>
+                            </div>
+                            <div class="keynote-talk-right">
+                                <div class="keynote-list">
+                                    <h5 class="text-red-600">Ideal if you are:</h5>
+                                    <ul>
+                                        <li>Seeking to enhance a sense of unity, connection, and belonging within the organisation.</li>
+                                        <li>Aiming to highlight the significance and meaning of company values and culture.</li>
+                                        <li>Dealing with major organisational change.</li>
+                                    </ul>
+                                </div>
+                                <div class="keynote-list">
+                                    <h5 class="text-red-600">You will gain:</h5>
+                                    <ul>
+                                        <li>A framework that will help you to identify and develop your values.</li>
+                                        <li>Tools that will help you to recognise emotions and stressful reactions that can drag us off course.</li>
+                                        <li>A Technique to help you take actions and make decisions that align you with your true north</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Talk 2 -->
+                         <div >
+                            <div class="keynote-talk">
+                            <div class="keynote-talk-body">
+                               <p class="footer-label">How to Pause and Create Space</p>
+                               <h3 class="keynote-talk-sub"During <span style="color:#BE3455;">Emotionally</span> Challenging Events</h3>
+                                <p class="keynote-talk-tagline">Give your team the capacity to successfully control their internal response to external events.</p>
+                                <p class="footer-desc">Where do our real struggles lie? Through a combination of neuroscience, wisdom from Eastern philosophy, and his own lived experience, Brian expands on one of his core beliefs: it is not life's everyday challenges that cause us to struggle, but how we react to them is where success unfolds – both personally and professionally.</p>
+                            </div>
+                            <div class="keynote-talk-right">
+                                <div class="keynote-list">
+                                    <h5>Ideal if you are:</h5>
+                                    <ul>
+                                        <li>Customer-facing teams working within a fast-paced, hectic environment.</li>
+                                        <li>Executives under pressure to react to a changing working environment.</li>
+                                        <li>Leaders challenged by internal industry transformation and evolving.</li>
+                                    </ul>
+                                </div>
+                                <div class="keynote-list">
+                                    <h5>You will gain:</h5>
+                                    <ul>
+                                        <li>Learn how to stay calm under pressure.</li>
+                                        <li>Harness the ability to catch emotional reactivity in full flight.</li>
+                                        <li>Develop a framework that will help you to avoid emotional burnout.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                         </div>
+                        <!-- Talk 3 -->
+                        <div class="keynote-talk">
+                            <div class="keynote-talk-body">
+                                <h3 class="keynote-talk-title">Beyond Resilience</h3>
+                                <h3 class="keynote-talk-sub">How to Use <span style="color:#BE3455;">Adversity</span> as Fuel for Growth</h3>
+                                <p class="keynote-talk-tagline">Watch your people learn how to use life's challenges to their advantage, and ultimately use adversity as fuel for growth.</p>
+                                <p class="footer-desc">Resilience is developed over time, through lived experiences and facing the hard knocks of life head-on. In this talk, Brian explores how we need to move beyond resilience and adopt life challenges to work for us, not against us. Through his own life story of overcoming heroin addiction to completing his PhD from Trinity College, he shows why our own resilience is one of nature's most powerful forces.</p>
+                            </div>
+                            <div class="keynote-talk-right">
+                                <div class="keynote-list">
+                                    <h5>Ideal if you are:</h5>
+                                    <ul>
+                                        <li>Sales executives and teams that deal with rejection on a regular basis.</li>
+                                        <li>Customer service teams who deal with challenging customers and complaints on a regular basis.</li>
+                                        <li>Project teams who face unforeseen obstacles, changes, and uncertainties that can derail their plans.</li>
+                                    </ul>
+                                </div>
+                                <div class="keynote-list">
+                                    <h5>You will gain:</h5>
+                                    <ul>
+                                        <li>Science-backed tools to navigate chronic and real-time stress and anxiety.</li>
+                                        <li>A new perspective that will help you to bounce back from setbacks using obstacles as fuel for growth.</li>
+                                        <li>A powerful visualisation technique that will help you to rehearse for future challenges.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            
+            </section>
+            <!-- Consultancy -->
+             <section id="Consultancy">
+                <!-- Banner -->
+                <div>
+                <div
+                  class="page-banner"
+                  style="background-image: url(assets/imgi_20_ARMedia-534.jpg);"
+                >
+                    <div class="hero-overlay"></div>
+                  <div class="hero-inner" id="BAnner-text">
+                    <div class=" w-lg lg:w-full hero-graphic reveal reveal-zoom" style="--d:120ms">
+                      <h1 class=" ml-25 text-white text-2xl lg:text-7xl font-bold">Consul<span class="text-red-600">tancy</span></h1>
+                  </div>
+                </div>
+            </div>
+                </div>
+                <!-- Tools -->
+                 <div class="footer-contact" id="book">
+                <div id="bookGrid" class="relative items-center z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 md:grid-cols-2 gap-0 w-full">
+                    <!-- Left Col -->
+                    <div class="md:pr-8 flex flex-col justify-center">
+                        <p class="footer-label">Tools</p>
+                        <h2 class="text-2xl">Bespoke support <span style="color: #BE3455;">for teams, leader, and organizations in </span>times of change</h2>
+                        
+                        <p class="footer-desc text-base sm:text-sm md:text-md lg:text-md leading-relaxed">Not every organisational challenge can be solved with a standard workshop.
+                            <br><br>
+                        Some require a deeper look at what is really happening inside a team or culture: stress, burnout, disconnection, poor communication, uncertainty, low trust, or the human impact of change.
+                            <br><br>
+                        Our consultancy work helps organisations make sense of these challenges and respond with practical, evidence-informed solutions.
+                            <br><br>
+                        Drawing on neuroscience, psychology, behaviour change, lived experience, and our work with leaders and teams, we support organisations through periods of pressure, transition, growth, and cultural change.
+                            <br><br>
+                        This can include team realignment, leadership support, hybrid working challenges, wellbeing strategy, resilience training, communication issues, or one-to-one coaching.
+                            <br><br>
+                        The aim is to help people perform better at work and live better outside it.
+                            <br><br>
+                        I can support your organisation across four key areas…</p>
+                        
+                    </div>
+                        <img src="assets/imgi_21_josh-calabrese-Ev1XqeVL2wI-unsplash-scaled.jpg" alt="">
+                </div>
+                </div>
+                <!-- Focus -->
+                 <div id="focus" class="consult-focus-wrap">
+                    <p class="footer-label text-center">Focus</p>
+                    <h1 class=" text-2xl lg:text-3xl  text-center">How we can <span class="text-red-800">help</span></h1>
+                    <div class="consult-grid mt-10">
+                    <!-- Card 1 -->
+                    <div class="consult-card">
+                        <img class="w-20 h-auto" src="assets/imgi_3_Brian-Pennie-magenta-Icons-Artboard-11-copy-2.png" alt="">
+                        <h1 class="consult-card-title"><span class="text-red-800">Creating</span> Real Resilience</h1>
+                        <p class="consult-card-desc">Through a combination of workshops, tools, and advice, we deliver the latest evidence-based approach helping your teams to better manage stress, avoid burnout, and create boundaries around challenging relationships, both in work and in life.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="consult-card">
+                        <img class="w-20 h-auto" src="assets/imgi_4_Brian-Pennie-magenta-Icons-Artboard-4-copy-2.png" alt="">
+                        <h1 class="consult-card-title"><span class="text-red-800">Driving</span> Team Building</h1>
+                        <p class="consult-card-desc">Using team meetings, breakout sessions and workshops, we help to develop a clear values-based structure clarifying the behaviours, guidance systems, and culture that will help create solid connections and build trust within teams.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="consult-card">
+                        <img class="w-20 h-auto" src="assets/imgi_5_Brian-Pennie-magenta-Icons-Artboard-18-copy-2.png" alt="">
+                        <h1 class="consult-card-title"><span class="text-red-800">Maintaining</span> Mental Health</h1>
+                        <p class="consult-card-desc">We provide a tailored suite of workshops, seminars and techniques designed to reduce stress and anxiety by prioritising the mental and physical wellbeing of your people, helping them build resilience, focus, and healthier ways of working.</p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="consult-card">
+                        <img class="w-20 h-auto" src="assets/imgi_6_Brian-Pennie-magenta-Icons-Artboard-79-copy-2.png" alt="">
+                        <h1 class="consult-card-title"><span class="text-red-800">Increasing</span> Productivity</h1>
+                        <p class="consult-card-desc">Using powerful, personal measurement systems, we help you understand how your time, energy and focus are being used, advising on how to create structured routines and work to drive productivity and achieve more consistent performance.</p>
+                    </div>
+                    </div>
+                 </div>
+                 <!-- Our Approch -->
+                    <div class="w-full mt-20  text-white" style=" background-color: #BE3455; background-opacity: 50%;">
+                         <div class="footer-contact" id="book">
+                <div id="bookGrid" class="relative items-center z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+                     <img class="w-full h-full" src="assets/imgi_23_FSKMMZ2HPFHEZBYSLJIVVQZTNU.avif" alt="">
+                    <!-- Left Col -->
+                    <div class="md:pr-8 flex flex-col gap-3 justify-center">
+                        <p class="footer-label text-white">Method</p>
+                        <h2 class="text-2xl">Our Approach</h2>
+                        <p class="text-md">Through our I-D-E-A framework, we apply a clear four-step approach to help your team manage the complexities of modern life and optimise performance at work.</p>
+                        <h3 class="text-xl font-bold">Identify</h3> 
+                        <p class="text-md">We identify the challenges facing you and your team, gaining a clear understanding of the causes, catalysts and consequences.</p>
+                        <h3 class="text-xl font-bold">Design</h3>
+                        <p class="text-md">Next, we design a plan of action with you to address the key concerns. This may include a tailored workshop, a once-off talk, or a series of in-depth coaching sessions.</p>  
+                        <h3 class="text-xl font-bold">Engage</h3>
+                        <p class="text-md">We then engage with your team and put the plan into action, ensuring the strategies are practical, relevant and immediately useful.</p> 
+                        <h3 class="text-xl font-bold">Adapt</h3>
+                        <p class="text-md">Finally, we adapt and learn. Once the new approach has been applied, we help refine and fine-tune the process so your team is better equipped to handle similar challenges in the future</p>
+                    </div>
+                       
+                </div>
+                </div>
+
+                    </div>
+                <!-- Clients -->
+                 <div class="footer-contact" id="clients">
+            <div class="relative z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 md:grid-cols-2 gap-0 w-full">
+                <!-- Left Col -->
+                <div class="md:pr-8 flex flex-col justify-center">
+                    <p class="footer-label">Client&rsquo;s</p>
+                    <h2 class="footer-heading">Partners in <br><span style="color: #BE3455;">transformation</span></h2>
+                    <p class="footer-desc">
+                        With a track record of delivering exceptional results and unwavering dedication to my clients, We have earned a reputation for integrity, expertise, and reliability.
+                    </p>
+                </div>
+                <!-- Right Col: Form -->
+                <div class="md:pl-4 grid grid-cols-4 mt-10 lg:mt-0 md:grid-cols-4 gap-4 md:justify-center mb-10">
+                   <img class="imageH" src="assets/imgi_5_DAVY.png" alt="Logo">
+                   <img class="imageH" src="assets/imgi_23_Amazon-Dark-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_24_Pfizer-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_25_EY-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_26_KPMG-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_27_MSD-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_28_Mercury-150x150.png" alt="Logo">
+                   <img class="imageH" src="assets/imgi_29_Sanofi-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_30_primark-logo-150x150.jpg" alt="Logo">
+                   <img class="imageH" src="assets/imgi_31_Matheson-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_32_rteAsset-1@300x-1-150x150.png" alt="Logo">
+                   <img class="imageH" src="assets/imgi_7_aib.png" alt="Logo">
+                   <img class="imageH" src="assets/imgi_33_BoI.png" alt="Logo">
+                   <img class="imageH" src="assets/imgi_34_Indeed-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_35_Artboard-1-150x150.png" alt="Logo">
+                   <img class="imageH" src="assets/imgi_36_newArtboard-1-150x150.png" alt="Logo">
+                </div>
+            </div>
+        </div>
+             </section>
+              <!-- Beyond Resilience -->
+              <section id="Beyondresis">
+                <!-- Banner -->
+                <div>
+                <div
+                  class="hero-banner"
+                  style="background-image: url(assets/imgi_32_Brian-Pennie-photo-by-Richie-Stokes-57-scaled.jpg);"
+                >
+                    <div class="hero-overlay"></div>
+                  <div class="hero-inner" id="BAnner-text">
+                    <div class=" w-lg lg:w-full hero-graphic reveal reveal-zoom" style="--d:120ms">
+                      <h1 class=" ml-25 text-white text-2xl lg:text-7xl font-bold">Beyond<Br> <span class="text-red-600">Resilience</span></h1>
+                  </div>
+                </div>
+            </div>
+                </div>
+                <!-- Intro Part 1 -->
+                <div class="footer-contact" id="book">
+                    <div id="bookGrid" class="relative items-center z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 md:grid-cols-2 gap-0 w-full">
+                        <div class="md:pr-8 flex flex-col justify-center">
+                            <p class="footer-label">beyond resilience</p>
+                            <h2 class="footer-heading">Inspire Real <span style="color: #BE3455;">Resilience</span> in your Team</h2>
+                            <p class="footer-desc text-base sm:text-lg md:text-xl lg:text-xl leading-relaxed">If you're a manager in today's corporate world, you face a whole new set of challenges. From talent shortages and employee expectations to helping people get the best from themselves in work, it can be hard to stay on top of everything and be there for your people too.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Intro Part 2 -->
+                <div class="footer-contact" id="book">
+                    <div id="bookGrid" class="relative items-center z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 md:grid-cols-2 gap-0 w-full">
+                        <div class="md:pr-8 flex flex-col justify-center">
+                            <p class="footer-label">Are we doing enough?</p>
+                            <h2 class="footer-heading">Are we doing enough to hold on to <span style="color: #BE3455;">good people?</span></h2>
+                            <p class="footer-desc text-base sm:text-lg md:text-xl lg:text-xl leading-relaxed">You want to give your teams the tools to combat stress and anxiety. And we understand that you also want to help them reach their potential both at work and at home.</p>
+                            <p class="footer-desc text-base sm:text-lg md:text-xl lg:text-xl leading-relaxed mt-4">Dr Brian Pennie, neuroscientist and performance consultant has developed a new programme entitled Beyond Resilience. This interactive workshop offers a series of tangible, practical, and evidence-based tools that will help your teams to better manage stress and anxiety both in work and life.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Benefits -->
+                <div class="footer-contact" id="book">
+                    <div class="relative z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] w-full">
+                        <div class="text-center mb-10">
+                            <p class="footer-label">benefits</p>
+                            <h2 class="footer-heading">How will I <span style="color: #BE3455;">benefit</span> from it?</h2>
+                        </div>
+                        <div class="keynote-grid">
+                            <div class="keynote-card">
+                                <img class="keynote-icon" src="assets/imgi_3_Brian-Pennie-magenta-Icons-Artboard-11-copy-2.png" alt="">
+                                <h3 class="keynote-card-title"><span style="color:#BE3455;">Retain</span> People</h3>
+                            </div>
+                            <div class="keynote-card">
+                                <img class="keynote-icon" src="assets/imgi_4_Brian-Pennie-magenta-Icons-Artboard-4-copy-2.png" alt="">
+                                <h3 class="keynote-card-title"><span style="color:#BE3455;">Prevent</span> Burnout</h3>
+                            </div>
+                            <div class="keynote-card">
+                                <img class="keynote-icon" src="assets/imgi_5_Brian-Pennie-magenta-Icons-Artboard-18-copy-2.png" alt="">
+                                <h3 class="keynote-card-title"><span style="color:#BE3455;">Reduce</span> Sick Days</h3>
+                            </div>
+                            <div class="keynote-card">
+                                <img class="keynote-icon" src="assets/imgi_6_Brian-Pennie-magenta-Icons-Artboard-79-copy-2.png" alt="">
+                                <h3 class="keynote-card-title"><span style="color:#BE3455;">Increase</span> Performance</h3>
+                            </div>
+                            <div class="keynote-card">
+                                <img class="keynote-icon" src="assets/imgi_3_Brian-Pennie-magenta-Icons-Artboard-11-copy-2.png" alt="">
+                                <h3 class="keynote-card-title"><span style="color:#BE3455;">Optimise</span> Productivity</h3>
+                            </div>
+                            <div class="keynote-card">
+                                <img class="keynote-icon" src="assets/imgi_4_Brian-Pennie-magenta-Icons-Artboard-4-copy-2.png" alt="">
+                                <h3 class="keynote-card-title"><span style="color:#BE3455;">Enhance</span> Relationships</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Programme Details -->
+                <div class="footer-contact" id="book">
+                    <div id="bookGrid" class="relative items-center z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 md:grid-cols-2 gap-0 w-full">
+                        <div class="md:pr-8 flex flex-col justify-center">
+                            <p class="footer-label">ABOUT THE COURSE</p>
+                            <h2 class="footer-heading">Programme <span style="color: #BE3455;">details</span></h2>
+                            <p class="footer-desc text-base sm:text-lg md:text-xl lg:text-xl leading-relaxed">This interactive workshop offers a series of tangible, practical, and evidence-based tools that will help your teams to better manage stress and anxiety both in work and life.</p>
+                            <p class="footer-desc text-lg mt-4"><strong>Duration:</strong> 4 x 90-minute sessions</p>
+                            <p class="footer-desc text-lg"><strong>Location:</strong> In-house or hybrid</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course Overview -->
+                <div class="footer-contact" id="book">
+                    <div id="bookGrid" class="relative z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 gap-0 w-full">
+                        <div>
+                            <p class="footer-label">course overview</p>
+                            <h2 class="footer-heading">Beyond <span style="color: #BE3455;">Resilience</span></h2>
+                            <p class="footer-desc text-base sm:text-lg md:text-xl lg:text-xl leading-relaxed">This interactive workshop offers a series of tangible, practical, and evidence-based tools that will help your teams to discover and nurture their inner resilience – helping them better manage stress and anxiety both in work and life.</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
+                            <div>
+                                <h3 class="text-xl font-bold mb-4">Who should attend</h3>
+                                <ol class="footer-desc list-decimal pl-5 space-y-2">
+                                    <li><strong>Customer facing teams</strong> dealing with unpredictable and challenging clients</li>
+                                    <li><strong>Leaders and executives</strong> who want to develop real resilience, helping them to learn and grow in the face of change</li>
+                                    <li><strong>Managers and their teams</strong> who wish to develop grit and mental toughness, in the face of an uncertain and changing working environment</li>
+                                    <li><strong>Teams</strong> facing unforeseen obstacles, changes, and uncertainties that can derail their plans.</li>
+                                    <li><strong>Individuals</strong> feeling disconnected at work</li>
+                                </ol>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-4">What You Will Learn</h3>
+                                <ol class="footer-desc list-decimal pl-5 space-y-2">
+                                    <li><strong>Understand</strong> how to build a science-based toolbox to navigate chronic and real-time stress and anxiety</li>
+                                    <li><strong>Learn</strong> how to boost your immune system using the simple protocols from the latest neuroscientific research</li>
+                                    <li><strong>Create</strong> a powerful neuroscience-based morning routine</li>
+                                    <li><strong>How to stay calm</strong> under pressure and catch emotional hi-jackings in full flight</li>
+                                    <li><strong>Develop</strong> an ability to reframe negative thinking and build greater confidence and self-belief</li>
+                                    <li><strong>Use</strong> powerful visualisation techniques that will help you rehearse for tomorrow's challenges today</li>
+                                    <li><strong>Gain</strong> a strategy to help you navigate challenging relationships</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- How Does It Work -->
+                <div class="w-full mt-20 text-white" style="background-color: #BE3455;">
+                    <div class="footer-contact" id="book">
+                        <div id="bookGrid" class="relative z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 gap-0 w-full">
+                            <div class="text-center mb-10">
+                                <p class="footer-label text-white">How does it work</p>
+                                <h2 class="footer-heading">How does it <span style="color:#ffffff;">work</span></h2>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                                <div class="flex flex-col items-center text-center p-6 rounded bg-white/10">
+                                    <div class="w-14 h-14 rounded-[50%] bg-white text-[#BE3455] flex items-center justify-center text-2xl font-bold mb-4 shadow-lg">1</div>
+                                    <h3 class="text-xl font-bold text-white mb-2">Consultation</h3>
+                                    <p class="text-white/90">We sit down and discuss your precise needs, getting a clear understanding of what challenges you face as a leader and your staff deal with on an everyday basis.</p>
+                                </div>
+                                <div class="flex flex-col items-center text-center p-6 rounded bg-white/10">
+                                    <div class="w-14 h-14 rounded-[50%] bg-white text-[#BE3455] flex items-center justify-center text-2xl font-bold mb-4 shadow-lg">2</div>
+                                    <h3 class="text-xl font-bold text-white mb-2">Understanding</h3>
+                                    <p class="text-white/90">We develop a tailor-made programme with key-performance indicators built-in to ensure your needs are met. Whether in-house, remote or a hybrid model, we find what works best for you.</p>
+                                </div>
+                                <div class="flex flex-col items-center text-center p-6 rounded bg-white/10">
+                                    <div class="w-14 h-14 rounded-[50%] bg-white text-[#BE3455] flex items-center justify-center text-2xl font-bold mb-4 shadow-lg">3</div>
+                                    <h3 class="text-xl font-bold text-white mb-2">Delivery</h3>
+                                    <p class="text-white/90">Over the course of one month or one week, Brian personally delivers four two-hour/90-minute sessions to departmental teams, units, or selected groups.</p>
+                                </div>
+                                <div class="flex flex-col items-center text-center p-6 rounded bg-white/10">
+                                    <div class="w-14 h-14 rounded-[50%] bg-white text-[#BE3455] flex items-center justify-center text-2xl font-bold mb-4 shadow-lg">4</div>
+                                    <h3 class="text-xl font-bold text-white mb-2">Follow-up</h3>
+                                    <p class="text-white/90">On completion, attendees are provided with toolkits and a workbook to help them get the most from the programme with Brian providing follow-up support for up to 90 days afterwards.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course & Module Details -->
+                <div class="footer-contact" id="book">
+                    <div id="bookGrid" class="relative z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 gap-0 w-full">
+                        <div>
+                            <p class="footer-label">BEYOND RESILIENCE</p>
+                            <h2 class="footer-heading">Course & <span style="color: #BE3455;">Module</span> Details</h2>
+                        </div>
+                        <!-- Module 1 -->
+                        <div class="mt-10 border-b border-surface-container pb-8">
+                            <h3 class="text-xl font-bold mb-2">BIOLOGICAL <span class="text-red-600">MODULE</span></h3>
+                            <p class="footer-label mb-4">Find out how to apply the latest neuro and science-based techniques to both tackle chronic and real-time stress</p>
+                            <p class="footer-desc mb-4"><strong>Module 1</strong> will dissect the interactive nature of the brain, body, and mind. With a focus on neuroplasticity, polyvagal theory, our immune systems, and how our bodies react to internal and external triggers, you'll learn how to apply the latest neuro and science-based techniques to tackle both chronic and real-time stress and anxiety. You will also learn about the relationship between the brain with both exercise and nutrition, as well as the neuroscientific underpinnings of my personal 3-min morning routine, called BAG, which harnesses the power of Breath work, Affirmations, and Gratitude.</p>
+                            <h4 class="font-bold mb-2">Module 1 will teach you how to</h4>
+                            <ul class="footer-desc list-disc pl-5 space-y-1">
+                                <li>Build a science-based toolbox to navigate stress and anxiety</li>
+                                <li>Develop a growth mindset</li>
+                                <li>Turn obstacles into opportunities for learning and growth</li>
+                            </ul>
+                        </div>
+                        <!-- Module 2 -->
+                        <div class="mt-8 border-b border-surface-container pb-8">
+                            <h3 class="text-xl font-bold mb-2">EMOTIONAL <span class="text-red-600">MODULE</span></h3>
+                            <p class="footer-label mb-4">Understand how to use and create space during emotionally challenging events.</p>
+                            <p class="footer-desc mb-4"><strong>Module 2</strong> will focus on emotional resilience, with an emphasis on learning how to pause and create space during emotionally challenging events. This workshop will also highlight the dangers of trying to control what you cannot control, as well as the chain-reactive nature of emotional triggering to uncontrollable events. You will also learn how to avoid emotional burnout by preventing emotional hijackings before they take hold.</p>
+                            <h4 class="font-bold mb-2">Module 2 will teach you how to</h4>
+                            <ul class="footer-desc list-disc pl-5 space-y-1">
+                                <li>Stay calm under pressure</li>
+                                <li>Catch emotional hijackings in full flight</li>
+                                <li>Avoid emotional burnout</li>
+                            </ul>
+                        </div>
+                        <!-- Module 3 -->
+                        <div class="mt-8 border-b border-surface-container pb-8">
+                            <h3 class="text-xl font-bold mb-2">PSYCHOLOGICAL <span class="text-red-600">MODULE</span></h3>
+                            <p class="footer-label mb-4">Learn how to change your relationship with negative self-talk and limiting beliefs.</p>
+                            <p class="footer-desc mb-4"><strong>Module 3</strong> will focus on our thoughts, beliefs, and self-talk. These are all huge forces that shape how we respond to external events – which can either empower us to overcome challenges or hold us back from reaching our full potential. Drawing on psychological concepts such as growth mindset and antifragility, you will learn how to develop greater confidence in yourself and lean into adversity using obstacles as fuel for growth.</p>
+                            <h4 class="font-bold mb-2">Module 3 will teach you how to</h4>
+                            <ul class="footer-desc list-disc pl-5 space-y-1">
+                                <li>Bounce back from setbacks</li>
+                                <li>Utilise visualisation techniques to develop mental toughness</li>
+                                <li>Build a wall of evidence to increase confidence and self-belief</li>
+                            </ul>
+                        </div>
+                        <!-- Module 4 -->
+                        <div class="mt-8">
+                            <h3 class="text-xl font-bold mb-2">SOCIAL <span class="text-red-600">MODULE</span></h3>
+                            <p class="footer-label mb-4">Discover how to create boundaries around challenging relationships, and surround yourself with people who will bring out the best in you.</p>
+                            <p class="footer-desc mb-4"><strong>Module 4</strong> focuses on our relationships with others, which can have a profound impact on our emotional well-being and resilience. With an emphasis on nurturing good relationships and removing problematic relationships (both personal and professional), this workshop will highlight the latest research from polyvagal theory, and my recent work with the godfather of this theory, Professor Steven Porges.</p>
+                            <h4 class="font-bold mb-2">Module 4 will teach you how to</h4>
+                            <ul class="footer-desc list-disc pl-5 space-y-1">
+                                <li>Learn how to say no to things that don't serve you</li>
+                                <li>Implement personal boundaries</li>
+                                <li>Nurture and enhance existing relationships</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Clients -->
+                <div class="footer-contact" id="clients">
+                    <div class="relative z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 md:grid-cols-2 gap-0 w-full">
+                        <div class="md:pr-8 flex flex-col justify-center">
+                            <p class="footer-label">Client&rsquo;s</p>
+                            <h2 class="footer-heading">Partners in <br><span style="color: #BE3455;">transformation</span></h2>
+                            <p class="footer-desc">With a track record of delivering exceptional results and unwavering dedication to my clients, We have earned a reputation for integrity, expertise, and reliability.</p>
+                        </div>
+                        <div class="md:pl-4 grid grid-cols-4 mt-10 lg:mt-0 md:grid-cols-4 gap-4 md:justify-center mb-10">
+                            <img class="imageH" src="assets/imgi_5_DAVY.png" alt="Logo">
+                            <img class="imageH" src="assets/imgi_23_Amazon-Dark-Logo-150x150.webp" alt="Logo">
+                            <img class="imageH" src="assets/imgi_24_Pfizer-Logo-150x150.webp" alt="Logo">
+                            <img class="imageH" src="assets/imgi_25_EY-Logo-150x150.webp" alt="Logo">
+                            <img class="imageH" src="assets/imgi_26_KPMG-Logo-150x150.webp" alt="Logo">
+                            <img class="imageH" src="assets/imgi_27_MSD-Logo-150x150.webp" alt="Logo">
+                            <img class="imageH" src="assets/imgi_28_Mercury-150x150.png" alt="Logo">
+                            <img class="imageH" src="assets/imgi_29_Sanofi-Logo-150x150.webp" alt="Logo">
+                            <img class="imageH" src="assets/imgi_30_primark-logo-150x150.jpg" alt="Logo">
+                            <img class="imageH" src="assets/imgi_31_Matheson-150x150.webp" alt="Logo">
+                            <img class="imageH" src="assets/imgi_32_rteAsset-1@300x-1-150x150.png" alt="Logo">
+                            <img class="imageH" src="assets/imgi_7_aib.png" alt="Logo">
+                            <img class="imageH" src="assets/imgi_33_BoI.png" alt="Logo">
+                            <img class="imageH" src="assets/imgi_34_Indeed-Logo-150x150.webp" alt="Logo">
+                            <img class="imageH" src="assets/imgi_35_Artboard-1-150x150.png" alt="Logo">
+                            <img class="imageH" src="assets/imgi_36_newArtboard-1-150x150.png" alt="Logo">
+                        </div>
+                    </div>
+                </div>
+              </section>
+              <!-- Programme for Life -->
+               <section id="programme">
+                    <!-- banner -->
+                     <div>
+                        <div
+                  class="hero-banner"
+                  style="background-image: url(assets/imgi_14_Screenshot-2023-12-18-at-12.38.03.png);"
+                >
+                    <div class="hero-overlay"></div>
+                  <div class="hero-inner" id="BAnner-text">
+                    <div class=" w-lg lg:w-full hero-graphic reveal reveal-zoom" style="--d:120ms">
+                      <h1 class=" ml-25 text-white text-2xl lg:text-7xl font-bold">Programme<Br> <span class="text-red-600">for Life</span></h1>
+                  </div>
+                </div>
+            </div>
+                     </div>
+                     <!-- Intro Part 1 -->
+                <div class="footer-contact" id="book">
+                    <div id="bookGrid" class="relative items-center z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 md:grid-cols-2 gap-0 w-full">
+                        <div class="md:pr-8 flex flex-col justify-center">
+                            <p class="footer-label">Programme for life</p>
+                            <h2 class="footer-heading">Build Teams and Transform <span style="color: #BE3455;">Working Relationships</span></h2>
+                            <p class="footer-desc text-base sm:text-lg md:text-xl lg:text-xl leading-relaxed">Workplaces can demand a lot from people, and it's easy for teams to feel overwhelmed and stressed in today's disconnected, hybrid workplaces. In challenging moments, negative thinking and self-doubt impact us all. And as a HR leader or manager, you see this first-hand every day.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Intro Part 2 -->
+                <div class="footer-contact" id="book">
+                    <div id="bookGrid" class="relative items-center z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 md:grid-cols-2 gap-0 w-full">
+                        <div class="md:pr-8 flex flex-col justify-center">
+                            <p class="footer-label">How can we help?</p>
+                            <h2 class="footer-heading">How can we help people perform at their <span style="color: #BE3455;">peak?</span></h2>
+                            <p class="footer-desc text-base sm:text-lg md:text-xl lg:text-xl leading-relaxed">You want to equip your teams with the skills and mindset to handle everyday working life. The right programme will bond your team closer, build an unbreakable spirit and drive their performance – together.</p>
+                            <p class="footer-desc text-base sm:text-lg md:text-xl lg:text-xl leading-relaxed mt-4">Developed and delivered by Dr. Brian Pennie, neuroscientist and resilience specialist, Programme for Life is designed to promote a sense of belonging, community, trust, and shared vulnerability between work colleagues, leading to deeper connections and smoother, more productive working relationships.</p>
+                            <p class="footer-desc text-base sm:text-lg md:text-xl lg:text-xl leading-relaxed mt-4">Over a series of 90-minute sessions, Brian uses smaller group discussions, experiential exercises, self-reflection exercises, and workbooks, tailoring them specifically to your organizational goals.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Programme Details -->
+                <div class="footer-contact" id="book">
+                    <div id="bookGrid" class="relative items-center z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 md:grid-cols-2 gap-0 w-full">
+                        <div class="md:pr-8 flex flex-col justify-center">
+                            <p class="footer-label">workshop info</p>
+                            <h2 class="footer-heading">Programme <span style="color: #BE3455;">details</span></h2>
+                            <p class="footer-desc text-base sm:text-lg md:text-xl lg:text-xl leading-relaxed">This interactive workshop offers a series of tangible, practical, and evidence-based tools that will help your teams to better manage stress and anxiety both in work and life.</p>
+                            <p class="footer-desc text-lg mt-4"><strong>Duration:</strong> 6-10 x 90-minute sessions</p>
+                            <p class="footer-desc text-lg"><strong>Location:</strong> In-house or hybrid</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Benefits -->
+                <div class="footer-contact" id="book">
+                    <div class="relative z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] w-full">
+                        <div class="text-center mb-10">
+                            <p class="footer-label">BENEFITS</p>
+                            <h2 class="footer-heading">How will you <span style="color: #BE3455;">benefit</span> from it?</h2>
+                        </div>
+                        <div class="keynote-grid">
+                            <div class="keynote-card">
+                                <img class="keynote-icon" src="assets/imgi_3_Brian-Pennie-magenta-Icons-Artboard-11-copy-2.png" alt="">
+                                <h3 class="keynote-card-title"><span style="color:#BE3455;">Connect</span></h3>
+                                <p class="footer-desc text-center">Connect more deeply and learn more about their work colleagues</p>
+                            </div>
+                            <div class="keynote-card">
+                                <img class="keynote-icon" src="assets/imgi_4_Brian-Pennie-magenta-Icons-Artboard-4-copy-2.png" alt="">
+                                <h3 class="keynote-card-title"><span style="color:#BE3455;">Develop</span></h3>
+                                <p class="footer-desc text-center">Develop a core set of values to guide you towards your true north</p>
+                            </div>
+                            <div class="keynote-card">
+                                <img class="keynote-icon" src="assets/imgi_5_Brian-Pennie-magenta-Icons-Artboard-18-copy-2.png" alt="">
+                                <h3 class="keynote-card-title"><span style="color:#BE3455;">Learn</span></h3>
+                                <p class="footer-desc text-center">Learn how to stay calm under pressure and prevent burnout</p>
+                            </div>
+                            <div class="keynote-card">
+                                <img class="keynote-icon" src="assets/imgi_6_Brian-Pennie-magenta-Icons-Artboard-79-copy-2.png" alt="">
+                                <h3 class="keynote-card-title"><span style="color:#BE3455;">Break</span></h3>
+                                <p class="footer-desc text-center">Learn how to break bad habits and develop good habits</p>
+                            </div>
+                            <div class="keynote-card">
+                                <img class="keynote-icon" src="assets/imgi_3_Brian-Pennie-magenta-Icons-Artboard-11-copy-2.png" alt="">
+                                <h3 class="keynote-card-title"><span style="color:#BE3455;">Believe</span></h3>
+                                <p class="footer-desc text-center">Eliminate self-doubt and limiting beliefs</p>
+                            </div>
+                            <div class="keynote-card">
+                                <img class="keynote-icon" src="assets/imgi_4_Brian-Pennie-magenta-Icons-Artboard-4-copy-2.png" alt="">
+                                <h3 class="keynote-card-title"><span style="color:#BE3455;">Create</span></h3>
+                                <p class="footer-desc text-center">Create a more sustainable work/life balance</p>
+                            </div>
+                            <div class="keynote-card">
+                                <img class="keynote-icon" src="assets/imgi_5_Brian-Pennie-magenta-Icons-Artboard-18-copy-2.png" alt="">
+                                <h3 class="keynote-card-title"><span style="color:#BE3455;">Build</span></h3>
+                                <p class="footer-desc text-center">Learn how to build greater self-awareness</p>
+                            </div>
+                            <div class="keynote-card">
+                                <img class="keynote-icon" src="assets/imgi_6_Brian-Pennie-magenta-Icons-Artboard-79-copy-2.png" alt="">
+                                <h3 class="keynote-card-title"><span style="color:#BE3455;">Discover</span></h3>
+                                <p class="footer-desc text-center">Discover what lights the fire in your belly</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course Overview -->
+                <div class="footer-contact" id="book">
+                    <div id="bookGrid" class="relative z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 gap-0 w-full">
+                        <div>
+                            <p class="footer-label">course overview</p>
+                            <h2 class="footer-heading">Programme <span style="color: #BE3455;">for Life</span></h2>
+                            <p class="footer-desc text-base sm:text-lg md:text-xl lg:text-xl leading-relaxed">On this energetic and engaging team-building programme, a sense of belonging, community, trust, and shared vulnerability is built up between work colleagues – allowing them strengthen bonds and streamline working relationships.</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
+                            <div>
+                                <h3 class="text-xl font-bold mb-4">Who should attend</h3>
+                                <ol class="footer-desc list-decimal pl-5 space-y-2">
+                                    <li><strong>Individuals or executives</strong> feeling disconnected at work</li>
+                                    <li><strong>Teams</strong> looking to create greater unity within the group</li>
+                                    <li><strong>People struggling</strong> with self-doubt, lack of confidence, and a mean inner-critic</li>
+                                    <li><strong>Leaders</strong> who want to unearth the power of a values-based living</li>
+                                    <li><strong>Managers</strong> who want to understand their people better</li>
+                                    <li><strong>Individuals</strong> who want to break bad habits</li>
+                                </ol>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-4">What You Will Gain</h3>
+                                <ol class="footer-desc list-decimal pl-5 space-y-2">
+                                    <li><strong>Understand</strong> how negative thinking and limiting beliefs impact your life.</li>
+                                    <li><strong>Acquire</strong> a science-backed toolkit for managing anxiety and stress.</li>
+                                    <li><strong>Master</strong> techniques for emotional regulation during challenging situations.</li>
+                                    <li><strong>Establish</strong> core values to guide your decisions and actions.</li>
+                                    <li><strong>Implement</strong> neuroscientific and behavioral strategies to break bad habits and form good ones.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- How Does It Work -->
+                <div class="w-full mt-20 text-white" style="background-color: #BE3455;">
+                    <div class="footer-contact" id="book">
+                        <div id="bookGrid" class="relative z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 gap-0 w-full">
+                            <div class="text-center mb-10">
+                                <p class="footer-label text-white">How does it work</p>
+                                <h2 class="footer-heading">How does it <span style="color:#ffffff;">work</span></h2>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                                <div class="flex flex-col items-center text-center p-6 rounded bg-white/10">
+                                    <div class="w-14 h-14 rounded-[50%] bg-white text-[#BE3455] flex items-center justify-center text-2xl font-bold mb-4 shadow-lg">1</div>
+                                    <h3 class="text-xl font-bold text-white mb-2">Consultation</h3>
+                                    <p class="text-white/90">Discuss your leadership challenges and staff needs, gaining a clear understanding of what you and your team are facing.</p>
+                                </div>
+                                <div class="flex flex-col items-center text-center p-6 rounded bg-white/10">
+                                    <div class="w-14 h-14 rounded-[50%] bg-white text-[#BE3455] flex items-center justify-center text-2xl font-bold mb-4 shadow-lg">2</div>
+                                    <h3 class="text-xl font-bold text-white mb-2">Understanding</h3>
+                                    <p class="text-white/90">Create a customized program with performance metrics, suited for in-house, remote, or hybrid models.</p>
+                                </div>
+                                <div class="flex flex-col items-center text-center p-6 rounded bg-white/10">
+                                    <div class="w-14 h-14 rounded-[50%] bg-white text-[#BE3455] flex items-center justify-center text-2xl font-bold mb-4 shadow-lg">3</div>
+                                    <h3 class="text-xl font-bold text-white mb-2">Delivery</h3>
+                                    <p class="text-white/90">Brian conducts six sessions (each 90-120 minutes) over six weeks or two days, for teams or groups, online or in-person.</p>
+                                </div>
+                                <div class="flex flex-col items-center text-center p-6 rounded bg-white/10">
+                                    <div class="w-14 h-14 rounded-[50%] bg-white text-[#BE3455] flex items-center justify-center text-2xl font-bold mb-4 shadow-lg">4</div>
+                                    <h3 class="text-xl font-bold text-white mb-2">Follow-up</h3>
+                                    <p class="text-white/90">Attendees receive toolkits and workbooks, with Brian offering support for 90 days post-program.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course & Module Details -->
+                <div class="footer-contact" id="book">
+                    <div id="bookGrid" class="relative z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 gap-0 w-full">
+                        <div>
+                            <p class="footer-label">PROGRAMME FOR LIFE</p>
+                            <h2 class="footer-heading">Course & <span style="color: #BE3455;">Module</span> Details</h2>
+                        </div>
+                        <!-- Module 1 -->
+                        <div class="mt-10 border-b border-surface-container pb-8">
+                            <h3 class="text-xl font-bold mb-2">1. LOST <span class="text-red-600">POTENTIAL</span></h3>
+                            <p class="footer-label mb-4">Discover how negative thinking and limiting beliefs hold us back in life and learn about the power of self-talk and its impact on our emotional worlds</p>
+                            <p class="footer-desc mb-4"><strong>Module one</strong> focuses on a problem many people face today. Namely, limiting beliefs, negative thinking, and the stories we tell ourselves. This foundational human problem is why many people do fail to live up to their true potential, restricting themselves through self-doubt and a harsh inner critic.</p>
+                            <h4 class="font-bold mb-2">Module 1 will teach you how to</h4>
+                            <ul class="footer-desc list-disc pl-5 space-y-1">
+                                <li>Discover how negative thinking and limiting beliefs hold us back in life</li>
+                                <li>Learn about the power of self-talk and its dark relationship with emotion</li>
+                                <li>Connect more deeply and learn more about work colleagues</li>
+                            </ul>
+                        </div>
+                        <!-- Module 2 -->
+                        <div class="mt-8 border-b border-surface-container pb-8">
+                            <h3 class="text-xl font-bold mb-2">2. BREAKING <span class="text-red-600">FREE</span></h3>
+                            <p class="footer-label mb-4">Find out how to foster greater self-belief and confidence by building a wall of evidence that focuses on people's unique talents</p>
+                            <p class="footer-desc mb-4"><strong>Module two</strong> will address many of the human challenges highlighted in session one. It focuses on building self-awareness, dissolving challenging emotions, creating a space between external stressors and our emotional response to them, and reframing limiting beliefs using a powerful technique from cognitive behavioural therapy.</p>
+                            <h4 class="font-bold mb-2">Module 2 will teach you how to</h4>
+                            <ul class="footer-desc list-disc pl-5 space-y-1">
+                                <li>Develop greater self-awareness around the mental and emotional worlds</li>
+                                <li>Learn how to reframe limiting beliefs (e.g. I'm not good enough)</li>
+                                <li>Build greater self-confidence while unearthing your own personal superpower</li>
+                            </ul>
+                        </div>
+                        <!-- Module 3 -->
+                        <div class="mt-8 border-b border-surface-container pb-8">
+                            <h3 class="text-xl font-bold mb-2">3. THE MIND-BODY <span class="text-red-600">CONNECT</span></h3>
+                            <p class="footer-label mb-4">Learn how our brain and body react to both calming and challenging situations.</p>
+                            <p class="footer-desc mb-4"><strong>Module three</strong> helps people to understand the mind-body connection, in terms of both neuroscience and psychology. With an emphasis on a stressed-versus-relaxed state of being, this session will highlight our amazing capacity to create change from the inside out.</p>
+                            <h4 class="font-bold mb-2">Module 3 will teach you how to</h4>
+                            <ul class="footer-desc list-disc pl-5 space-y-1">
+                                <li>Understand how our brain and body reacts to both calming and challenging situations</li>
+                                <li>Build a science-based toolbox that will change your relationship with anxiety and stress</li>
+                                <li>Become more focused, present, and attentive by utilising the neuroscience of mindfulness</li>
+                            </ul>
+                        </div>
+                        <!-- Module 4 -->
+                        <div class="mt-8 border-b border-surface-container pb-8">
+                            <h3 class="text-xl font-bold mb-2">4. A GUIDANCE SYSTEM <span class="text-red-600">FOR LIFE</span></h3>
+                            <p class="footer-label mb-4">Identify and develop a values-based framework that will help you make decisions and take actions that align with your True North.</p>
+                            <p class="footer-desc mb-4"><strong>Module four</strong> will highlight the immense power of creating a values-based system to direct your life. Our values provide a pathway for finding our true authentic selves, as well as guiding us to what's important in our lives.</p>
+                            <h4 class="font-bold mb-2">Module 4 will teach you how to</h4>
+                            <ul class="footer-desc list-disc pl-5 space-y-1">
+                                <li>Develop a core set of values that will guide decisions and actions</li>
+                                <li>Discover the difference between value-based and feelings-based decisions</li>
+                                <li>Learn how to use a simple and practical metaphorical tool to guide you in times of stress</li>
+                            </ul>
+                        </div>
+                        <!-- Module 5 -->
+                        <div class="mt-8 border-b border-surface-container pb-8">
+                            <h3 class="text-xl font-bold mb-2">5. MAGIC AND <span class="text-red-600">MIRACLES</span></h3>
+                            <p class="footer-label mb-4">Push towards purposeful action, while at the same time finding balance in daily life.</p>
+                            <p class="footer-desc mb-4"><strong>Module five</strong> will discuss the topic of purpose, pointing people towards their "why" and true calling in life – both personally and professionally. This process requires action, and knowing how to take those first steps is crucial.</p>
+                            <h4 class="font-bold mb-2">Module 5 will teach you how to</h4>
+                            <ul class="footer-desc list-disc pl-5 space-y-1">
+                                <li>Shine a brighter light on your why, your purpose, and true calling in life</li>
+                                <li>Prevent burnout and feeling overwhelmed by creating a better work/life balance</li>
+                                <li>Overcome procrastination and fear and take purposeful action in both work and life</li>
+                            </ul>
+                        </div>
+                        <!-- Module 6 -->
+                        <div class="mt-8">
+                            <h3 class="text-xl font-bold mb-2">6. TAKING <span class="text-red-600">ACTION</span></h3>
+                            <p class="footer-label mb-4">Change behaviour and bad habits, and learn how to create and sustain progressive habits, including powerful morning routines, intention-setting and more</p>
+                            <p class="footer-desc mb-4">Based on the latest research from behavioural psychology, <strong>module six</strong> will show people how to change their behaviour and habits. We will discuss the science of habits, the power of keystone habits, how to break bad habits, and how to create and sustain progressive habits.</p>
+                            <h4 class="font-bold mb-2">Module 6 will teach you how to</h4>
+                            <ul class="footer-desc list-disc pl-5 space-y-1">
+                                <li>Break bad habits and develop good habits using neuro and behavioural science</li>
+                                <li>Create powerful morning routines that will positively flow into other areas of their lives</li>
+                                <li>Become more intentional, self-directed, and self-accountable for their mental, emotional, and physical wellbeing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Clients -->
+                <div class="footer-contact" id="clients">
+                    <div class="relative z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 md:grid-cols-2 gap-0 w-full">
+                        <div class="md:pr-8 flex flex-col justify-center">
+                            <p class="footer-label">Client&rsquo;s</p>
+                            <h2 class="footer-heading">Partners in <br><span style="color: #BE3455;">transformation</span></h2>
+                            <p class="footer-desc">With a track record of delivering exceptional results and unwavering dedication to my clients, We have earned a reputation for integrity, expertise, and reliability.</p>
+                        </div>
+                        <div class="md:pl-4 grid grid-cols-4 mt-10 lg:mt-0 md:grid-cols-4 gap-4 md:justify-center mb-10">
+                            <img class="imageH" src="assets/imgi_5_DAVY.png" alt="Logo">
+                            <img class="imageH" src="assets/imgi_23_Amazon-Dark-Logo-150x150.webp" alt="Logo">
+                            <img class="imageH" src="assets/imgi_24_Pfizer-Logo-150x150.webp" alt="Logo">
+                            <img class="imageH" src="assets/imgi_25_EY-Logo-150x150.webp" alt="Logo">
+                            <img class="imageH" src="assets/imgi_26_KPMG-Logo-150x150.webp" alt="Logo">
+                            <img class="imageH" src="assets/imgi_27_MSD-Logo-150x150.webp" alt="Logo">
+                            <img class="imageH" src="assets/imgi_28_Mercury-150x150.png" alt="Logo">
+                            <img class="imageH" src="assets/imgi_29_Sanofi-Logo-150x150.webp" alt="Logo">
+                            <img class="imageH" src="assets/imgi_30_primark-logo-150x150.jpg" alt="Logo">
+                            <img class="imageH" src="assets/imgi_31_Matheson-150x150.webp" alt="Logo">
+                            <img class="imageH" src="assets/imgi_32_rteAsset-1@300x-1-150x150.png" alt="Logo">
+                            <img class="imageH" src="assets/imgi_7_aib.png" alt="Logo">
+                            <img class="imageH" src="assets/imgi_33_BoI.png" alt="Logo">
+                            <img class="imageH" src="assets/imgi_34_Indeed-Logo-150x150.webp" alt="Logo">
+                            <img class="imageH" src="assets/imgi_35_Artboard-1-150x150.png" alt="Logo">
+                            <img class="imageH" src="assets/imgi_36_newArtboard-1-150x150.png" alt="Logo">
+                        </div>
+                    </div>
+                </div>
+               </section>
+               <!-- Courses  -->
+                <section id="courses">
+                    <!-- BAnner -->
+                     <div>
+                        <div
+                  class="hero-banner"
+                  style="background-image: url(assets/imgi_10_vecteezy_e-inlarning-begrepp-tillfallig-foretag-man-studerar_13932567-scaled-e1709856937999.jpg);"
+                >
+                    <div class="hero-overlay"></div>
+                  <div class="hero-inner" id="BAnner-text">
+                    <div class=" w-lg lg:w-full hero-graphic reveal reveal-zoom" style="--d:120ms">
+                      <h1 class=" ml-25 text-white text-2xl lg:text-7xl font-bold">On <span class="text-red-600">line Courses</span></h1>
+                  </div>
+                </div>
+            </div>
+                     </div>
+                      <div id="focus-section" class=" flex mx-auto max-w-5xl flex-col items-center">
+                
+                <h2 class="footer-heading max-w-5xl">Online <span style="color: #BE3455;">Courses</span></h2>
+                <p class="text-center w-4xl">Brian Pennie’s online courses offer transformative learning experiences. Unlock your potential, gain valuable insights, and achieve your goals with Brian’s expert guidance.
+            Join us today and start your journey to personal and professional growth.</p>
+                <div class="flex mt-10 items-center gap-20 justify-between flex-col lg:flex-row">
+                    <!-- image -->
+                     <img class=" w-70 lg:w-120" src="assets/imgi_11_relationships-are-mirrors-1-scaled-1.webp" alt="Person">
+                     <div class="flex flex-col items-center max-w-3xl lg:max-w-5xl">
+                        <p class="footer-label">COURSE</p>
+                        <h2 class="footer-heading mb-10"><span style="color: #BE3455;">Self-Talk</span></h2>
+                        <p class="footer-desc text-xl">This course will take you on a journey to a more positive mind. I will explain what Self-Talk is and why it happens to us, including the science of self-talk. I will run through proven techniques to change your self-talk, forever</p>
+                        <a href="" class="btn mt-15 bg-red-700 px-10 text-white">Lean More</a>
+                     </div>
+                </div>
+                <!-- 2 -->
+                 <div class="flex mt-10 items-center gap-20 justify-between flex-col-reverse lg:flex-row">
+                    <div class="flex flex-col items-center max-w-3xl lg:max-w-5xl">
+                        <p class="footer-label">COURSE</p>
+                        <h2 class="footer-heading mb-10">Creating Powerful Morning <span style="color: #BE3455;">Routines</span></h2>
+                        <p class="footer-desc text-xl">Are you struggling with motivation, procrastination, lack of clarity, and low energy? If so, this course, which addresses all of these issues, is for you.</p>
+                        <a href="" class="btn mt-15 bg-red-700 px-10 text-white">Lean More</a>
+                     </div>
+                    <!-- image -->
+                     <img class=" w-70 lg:w-120" src="assets/imgi_12_1_XhuY0gsJhuzcee9-Bt0Rkw.jpg" alt="Person">
+                     
+                </div>
+                <!-- 3 -->
+                 <div class="flex mt-10 items-center gap-20 justify-between flex-col lg:flex-row">
+                    <!-- image -->
+                     <img class=" w-70 lg:w-120" src="assets/imgi_13_193116.jpg" alt="Person">
+                     <div class="flex flex-col items-center max-w-3xl lg:max-w-5xl">
+                        <p class="footer-label">COURSE</p>
+                        <h2 class="footer-heading mb-10">Breaking Bad<span style="color: #BE3455;">Habits</span></h2>
+                        <p class="footer-desc text-xl">This course will help you develop a deeper understanding of habits, recognise when it becomes a problem and how to change these habits.</p>
+                        <a href="" class="btn mt-15 bg-red-700 px-10 text-white">Lean More</a>
+                     </div>
+                </div>
+                <!-- 4 -->
+                 <div class="flex mt-10 items-center gap-20 justify-between flex-col-reverse lg:flex-row">
+                    <div class="flex flex-col items-center max-w-3xl lg:max-w-5xl">
+                        <p class="footer-label">COURSE</p>
+                        <h2 class="footer-heading mb-10">Unlocking the secrets of <span style="color: #BE3455;">Addiction</span>Recovery</h2>
+                        <p class="footer-desc text-xl">This course will allow you to discover several core ingredients to addiction recovery and improve your relationships with loved ones struggling with addiction</p>
+                        <a href="" class="btn mt-15 bg-red-700 px-10 text-white">Lean More</a>
+                     </div>
+                    <!-- image -->
+                     <img class=" w-70 lg:w-120" src="assets/imgi_14_addiction.jpg" alt="Person">
+                     
+                </div>
+                <!-- 5 -->
+                 <div class="flex mt-10 items-center gap-20 justify-between flex-col-reverse lg:flex-row">
+                     <!-- image -->
+                     <img class=" w-70 lg:w-120" src="assets/imgi_15_0__P01IpI9037-cJTS.png" alt="Person">
+
+                    <div class="flex flex-col items-center max-w-3xl lg:max-w-5xl">
+                        <p class="footer-label">COURSE</p>
+                        <h2 class="footer-heading mb-10">Love, Loss and  <span style="color: #BE3455;">Abandonment</span></h2>
+                        <p class="footer-desc text-xl">CourseLove, Loss and Abandonment
+                        In this course, we delve deep into love, loss and abandonment. We explore conditional to unconditional love, trust and self-esteem and the neuroscience of trauma</p>
+                        <a href="" class="btn mt-15 bg-red-700 px-10 text-white">Lean More</a>
+                     </div>
+                   
+                     
+                </div>
+                <!-- 6 -->
+                 <div class="flex mt-10 items-center gap-20 justify-between flex-col-reverse lg:flex-row">
+                    <div class="flex flex-col items-center max-w-3xl lg:max-w-5xl">
+                        <p class="footer-label">COURSE</p>
+                        <h2 class="footer-heading mb-10">The Psychology and Neuroscience of <span style="color: #BE3455;">Manifesting</span></h2>
+                        <p class="footer-desc text-xl">This online course takes a deep dive into the psychology and neuroscience of manifesting. It includes three two-hour lectures, Q & A sessions, worksheets, relevant resources and a variety of takeaway tools.</p>
+                        <a href="" class="btn mt-15 bg-red-700 px-10 text-white">Lean More</a>
+                     </div>
+                    <!-- image -->
+                     <img class=" w-70 lg:w-120" src="assets/imgi_16_blob-007966b.webp
+                     " alt="Person">
+                     
+                </div>
+            </div>
+            <!-- Clients -->
+             <div class="footer-contact" id="clients">
+            <div class="relative z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 md:grid-cols-2 gap-0 w-full">
+                <!-- Left Col -->
+                <div class="md:pr-8 flex flex-col justify-center">
+                    <p class="footer-label">Client&rsquo;s</p>
+                    <h2 class="footer-heading">Partners in <br><span style="color: #BE3455;">transformation</span></h2>
+                    <p class="footer-desc">
+                        With a track record of delivering exceptional results and unwavering dedication to my clients, We have earned a reputation for integrity, expertise, and reliability.
+                    </p>
+                    
+                </div>
+                <!-- Right Col: Form -->
+                <div class="md:pl-4 grid grid-cols-4 mt-10 lg:mt-0 md:grid-cols-4 gap-4 md:justify-center mb-10">
+                   <img class="imageH" src="assets/imgi_5_DAVY.png" alt="Logo">
+                   <img class="imageH" src="assets/imgi_23_Amazon-Dark-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_24_Pfizer-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_25_EY-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_26_KPMG-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_27_MSD-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_28_Mercury-150x150.png" alt="Logo">
+                   <img class="imageH" src="assets/imgi_29_Sanofi-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_30_primark-logo-150x150.jpg" alt="Logo">
+                   <img class="imageH" src="assets/imgi_31_Matheson-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_32_rteAsset-1@300x-1-150x150.png" alt="Logo">
+                   <img class="imageH" src="assets/imgi_7_aib.png" alt="Logo">
+                   <img class="imageH" src="assets/imgi_33_BoI.png" alt="Logo">
+                   <img class="imageH" src="assets/imgi_34_Indeed-Logo-150x150.webp" alt="Logo">
+                   <img class="imageH" src="assets/imgi_35_Artboard-1-150x150.png" alt="Logo">
+                   <img class="imageH" src="assets/imgi_36_newArtboard-1-150x150.png" alt="Logo">
+                </div>
+            </div>
+        </div>
+        <!-- Bonus Time -->
+          <div>
+                 <div class="footer-contact" id="book">
+            <div id="bookGrid" class="relative z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 md:grid-cols-2 gap-0 w-full">
+                <!-- Left Col -->
+                <div class="md:pr-8 flex flex-col justify-center">
+                    <p class="footer-label">Book&rsquo;s</p>
+                    <h2 class="footer-heading"><span style="color: #BE3455;">Bonus </span>Time</h2>
+                    <i class="footer-desc">
+                        <strong>A true story of surviving the worstand discovering the magic of every day.</strong>
+                    </i>
+                    <p class="footer-desc text-xl">In this incredibly honest and inspirational book, I <br> tell the story of how I turned my seemingly <br> hopeless existence into a rich and rewarding <br> life, showing that change is always possible, <br> no matter how stuck we feel.</p>
+                    
+                </div>
+                <img src="assets/imgi_41_Bonus-Time.jpg" alt="">
+            </div>
+        </div>
+            </div>
+
+
+                </section>
+    </main>
+    <footer>
+        <!-- Contact Section -->
+        <div class="footer-contact" id="contact">
+            <!-- Animated background layers -->
+            <div class="contact-bg-glow" aria-hidden="true"></div>
+            <div class="contact-bg-glow contact-bg-glow-2" aria-hidden="true"></div>
+            <!-- Floating particles -->
+            <div class="contact-floats" aria-hidden="true">
+                <span class="float-p" style="--x:8%;--d:0s;--dur:14s">✦</span>
+                <span class="float-p" style="--x:22%;--d:-4s;--dur:18s">✦</span>
+                <span class="float-p" style="--x:38%;--d:-8s;--dur:12s">●</span>
+                <span class="float-p" style="--x:55%;--d:-2s;--dur:20s">✦</span>
+                <span class="float-p" style="--x:72%;--d:-6s;--dur:16s">✦</span>
+                <span class="float-p" style="--x:88%;--d:-10s;--dur:15s">●</span>
+                <span class="float-p" style="--x:94%;--d:-3s;--dur:19s">✦</span>
+                <span class="float-p" style="--x:15%;--d:-12s;--dur:17s">●</span>
+            </div>
+            <div id="contactGrid" class="relative z-10 max-w-[1130px] mx-auto px-[25px] md:px-[50px] py-[25px] md:py-[50px] grid grid-cols-1 md:grid-cols-2 gap-0 w-full">
+                <!-- Left Col -->
+                <div class="md:pr-8 flex flex-col justify-center">
+                    <p class="footer-label">Let&rsquo;s get in touch</p>
+                    <h2 class="footer-heading">Find out how we <span style="color: #BE3455;">can help you.</span></h2>
+                    <p class="footer-desc">
+                        <strong>Ready to explore what change could look like for you or your team?</strong><br />
+                        <strong>From keynotes and corporate programmes to consultancy and coaching, we help people build resilience, navigate change, and create lasting transformation through science-backed tools.</strong>
+                    </p>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <span class="material-symbols-outlined">send</span>
+                            <span>info@brianpennie.com</span>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">location_on</span>
+                            <span>Change is Possible, GD House,&nbsp;Tallaght Business Park, Dublin 24 D24 FW5D</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Right Col: Form -->
+                <div class="md:pl-4 md:flex md:flex-col md:justify-center">
+                    <form class="footer-form" novalidate>
+                        <div class="field">
+                            <label class="sr-only" for="form-name">Name</label>
+                            <input type="text" id="form-name" name="name" placeholder="Your name here" required />
+                        </div>
+                        <div class="field">
+                            <label class="sr-only" for="form-email">Email</label>
+                            <input type="email" id="form-email" name="email" placeholder="Email address here" required />
+                        </div>
+                        <div class="field">
+                            <label class="sr-only" for="form-message">Message</label>
+                            <textarea id="form-message" name="message" rows="4" placeholder="Type your message here"></textarea>
+                        </div>
+                        <div class="field">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="form-consent" name="consent" required />
+                                <span>I agree to the Terms of Service and Privacy Policy.</span>
+                            </label>
+                        </div>
+                        <button class="submit-btn" type="submit">Let's Talk!</button>
+                        <p class="form-message" id="formMessage">Thanks! We&rsquo;ll be in touch soon.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Dark Footer -->
+        <div class="footer-dark">
+            <div class="max-w-[1200px] mx-auto px-[25px] md:px-[50px] py-[50px] grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-x-6 gap-y-10 md:gap-y-8">
+                <!-- Logo -->
+                <div class="md:col-span-4 lg:col-span-1">
+                    <a href="#home-section">
+                        <img alt="Brian Pennie Logo" class="w-1/2 md:w-1/5 lg:w-3/5" src="assets/imgi_19_Brian-Pennie-Logo-White-Portrait_1-768x670.png" />
+                    </a>
+                </div>
+                <!-- Links 1 -->
+                <div class="md:col-span-1">
+                    <ul class="footer-link-list">
+                        <li><a href="#home-section"><span class="material-symbols-outlined">chevron_right</span>Homepage</a></li>
+                        <li><a href="#MyStory"><span class="material-symbols-outlined">chevron_right</span>About Me</a></li>
+                        <li><a href="#Keynotes"><span class="material-symbols-outlined">chevron_right</span>Keynotes</a></li>
+                        <li><a href="#Beyondresis"><span class="material-symbols-outlined">chevron_right</span>Beyond Resilience</a></li>
+                    </ul>
+                </div>
+                <!-- Links 2 -->
+                <div class="md:col-span-1">
+                    <ul class="footer-link-list">
+                        <li><a href="#programme"><span class="material-symbols-outlined">chevron_right</span>Programme for Life</a></li>
+                        <li><a href="#Consultancy"><span class="material-symbols-outlined">chevron_right</span>Consultancy</a></li>
+                        <li><a href="#courses"><span class="material-symbols-outlined">chevron_right</span>Online Courses</a></li>
+                        <li><a href="#contact"><span class="material-symbols-outlined">chevron_right</span>Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Links 3 -->
+                <div class="md:col-span-1">
+                    <ul class="footer-link-list">
+                        <li class="no-link"><span class="material-symbols-outlined">chevron_right</span>Privacy Policy</li>
+                        <li class="no-link"><span class="material-symbols-outlined">chevron_right</span>Cookie Policy</li>
+                        <li class="no-link"><span class="material-symbols-outlined">chevron_right</span>Terms &amp; Conditions</li>
+                    </ul>
+                </div>
+                <!-- Follow Me -->
+                <div class="md:col-span-1">
+                    <h3 class="footer-col-head">Follow Me</h3>
+                    <div class="footer-social">
+                        <a href="https://www.youtube.com/@brianpenniephd1073/videos" target="_blank" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/brianpennie78" target="_blank" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/brian-pennie/" target="_blank" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.881 3.87 6 2.5 6S.02 4.881.02 3.5C.02 2.12 1.13 1 2.5 1s2.48 1.12 2.48 2.5zM.015 8h5V24h-5V8zm7.655 0h4.78v2.185h.068c.666-1.26 2.29-2.588 4.713-2.588 5.04 0 5.968 3.317 5.968 7.63V24h-4.988v-8.156c0-1.946-.034-4.45-2.71-4.45-2.713 0-3.128 2.12-3.128 4.31V24H7.67V8z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copy">&copy; Brian Pennie | All Rights Reserved</div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
